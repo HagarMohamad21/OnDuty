@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="userName">اسم المستخدم</string>
+    <string name="password">كلمة السر</string>
+    <string name="login">دخول</string>
+    <string name="forgotPassword">نسيت كلمة السر؟</string>
+    <string name="forgotUserName">نسيت اسم المستخدم؟</string>
+    <string name="home">الرئيسية</string>
+    <string name="personal">شخصي</string>
+    <string name="myOffice">مكتبي</string>
+    <string name="general">عام</string>
+    <string name="departments">الأقسام</string>
+    <string name="messages">الرسائل</string>
+    <string name="contacts">جهات الاتصال</string>
+    <string name="logout">خروج</string>
+    <string name="hrOffice">الموارد البشرية</string>
+    <string name="action" translatable="false">الخيارات</string>
+    <string name="Id">الرقم التعريفي</string>
+    <string name="emergencyCall">مكالمة الطوارئ</string>
+    <string name="reports">تقارير</string>
+    <string name="meeting">إجتماعات</string>
+    <string name="events">أحداث</string>
+    <string name="trainings">تدريبات</string>
+    <string name="conference">مؤتمرات</string>
+    <string name="backIcons">&#xe905;</string>
+    <string name="personal_card">الملف الشخصي</string>
+    <string name="bussinessCard">ملف العمل</string>
+    <string name="roster">جدول الخدمة</string>
+    <string name="emegencyCellphone" >هاتف الطوارئ</string>
+    <string name="phone">الهاتف</string>
+    <string name="email">البريد </string>
+    <string name="save">حفظ</string>
+
+</resources>

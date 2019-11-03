@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="userIcon" translatable="false">&#xe902;</string>
+    <string name="lockIcon" translatable="false">&#xe900;</string>
+    <string name="menuIcon" translatable="false">&#xe903;</string>
+    <string name="downArrow" translatable="false">&#xe901;</string>
+
+
+</resources>

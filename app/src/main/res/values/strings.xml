@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">OnDuty</string>
+    <string name="app_name" translatable="false">OnDuty</string>
+    <string name="userName">User name </string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgotPassword">Forgot password?</string>
+    <string name="forgotUserName">Forgot user name?</string>
+    <string name="home">Home</string>
+    <string name="personal">Personal</string>
+    <string name="myOffice">My office</string>
+    <string name="general">General</string>
+    <string name="departments">Departments</string>
+    <string name="messages">Messages</string>
+    <string name="action" translatable="false">Actions</string>
+    <string name="contacts">Contacts</string>
+    <string name="hrOffice">HR office</string>
+    <string name="Id">ID</string>
+    <string name="logout">Logout</string>
+    <string name="emergencyCall">Emergency call</string>
+    <string name="reports">Reports</string>
+    <string name="meeting">Meetings</string>
+    <string name="events">Events</string>
+    <string name="trainings">Trainings</string>
+    <string name="conference">Conferences</string>
+    <string name="backIcons">&#xe904;</string>
+    <string name="personal_card">Personal card</string>
+    <string name="bussinessCard">Bussiness card</string>
+    <string name="leavesPh">Leaves. PH</string>
+    <string name="roster">Roster</string>
+    <string name="emegencyCellphone">Emergency phone</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
 </resources>

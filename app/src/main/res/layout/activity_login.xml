@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+    <include layout="@layout/snippet_toolbar"/>
+ <include layout="@layout/guidelines"/>
+
+    <EditText
+        android:id="@+id/userNameEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="@string/userName"
+        android:paddingStart="@dimen/editTextPadding"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+
+    <EditText
+        android:id="@+id/passwordEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:hint="@string/password"
+        android:paddingStart="@dimen/editTextPadding"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditTxt" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/userIcon"
+        android:tag="icon"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/iconTextSize"
+        android:layout_marginStart="@dimen/sideMargin"
+        app:layout_constraintBottom_toBottomOf="@+id/userNameEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/userNameEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/userNameEditTxt" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lockIcon"
+        android:tag="icon"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/iconTextSize"
+        android:layout_marginStart="@dimen/sideMargin"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/passwordEditTxt" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:text="@string/login"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background_accent_green"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditTxt"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/forgotUserNameTxt"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/forgotUserName"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        tools:layout_editor_absoluteX="171dp" />
+
+    <TextView
+        android:id="@+id/forgotPasswordTxt"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/forgotPassword"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/forgotUserNameTxt"
+        tools:layout_editor_absoluteX="177dp" />
+
+</android.support.constraint.ConstraintLayout>

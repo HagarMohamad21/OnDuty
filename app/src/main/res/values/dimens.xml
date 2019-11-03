@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbarHeight">60dp</dimen>
+    <dimen name="textSize">14sp</dimen>
+    <dimen name="iconTextSize">15sp</dimen>
+    <dimen name="topBarIconSize">25sp</dimen>
+    <dimen name="sideMargin">10dp</dimen>
+    <dimen name="verticalGuidelineMargin">10dp</dimen>
+    <dimen name="horizontalBottomGuidelineMargin">10dp</dimen>
+    <dimen name="viewsHeight">40dp</dimen>
+    <dimen name="viewsRadius">10dp</dimen>
+    <dimen name="topGuideLineMargin">70dp</dimen>
+    <dimen name="innerSpacing">10dp</dimen>
+    <dimen name="editTextPadding">30dp</dimen>
+</resources>
