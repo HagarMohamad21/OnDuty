@@ -7,7 +7,7 @@
     <dimen name="sideMargin">10dp</dimen>
     <dimen name="verticalGuidelineMargin">10dp</dimen>
     <dimen name="horizontalBottomGuidelineMargin">10dp</dimen>
-    <dimen name="viewsHeight">40dp</dimen>
+    <dimen name="viewsHeight">35dp</dimen>
     <dimen name="viewsRadius">10dp</dimen>
     <dimen name="topGuideLineMargin">70dp</dimen>
     <dimen name="innerSpacing">10dp</dimen>

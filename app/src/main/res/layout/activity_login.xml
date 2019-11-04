@@ -62,7 +62,8 @@
         app:layout_constraintStart_toStartOf="@+id/passwordEditTxt"
         app:layout_constraintTop_toTopOf="@+id/passwordEditTxt" />
 
-    <Button
+    <TextView
+        android:gravity="center"
         android:id="@+id/loginBtn"
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"

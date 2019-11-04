@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RequestLeaveActvity">
+<include layout="@layout/snippet_toolbar"/>
+<include layout="@layout/guidelines"/>
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/leaveSpinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:padding="5dp"
+        android:entries="@array/leavesEntry"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"/>
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/leaveSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/leaveSpinner"
+        app:layout_constraintTop_toTopOf="@+id/leaveSpinner" />
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@color/lightGrey"
+        app:layout_constraintTop_toBottomOf="@+id/leaveSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:id="@+id/startEditTxt"
+        android:hint="@string/start"
+        app:layout_constraintTop_toBottomOf="@+id/divider8"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:id="@+id/textView37"
+        android:hint="@string/end"
+        app:layout_constraintTop_toBottomOf="@+id/startEditTxt"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"  />
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:id="@+id/textView38"
+        android:hint="@string/resumeToDuty"
+        app:layout_constraintTop_toBottomOf="@+id/textView37"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"  />
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/textView39"
+        android:hint="@string/total"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"  />
+
+    <EditText
+        android:id="@+id/reasonsEditTxt"
+    android:background="@drawable/edit_text_back"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:ems="10"
+        android:textSize="@dimen/textSize"
+        android:inputType="textPersonName"
+        android:hint="@string/reasons"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"  />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:text="@string/submit"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background_accent_green"
+        app:layout_constraintTop_toBottomOf="@id/reasonsEditTxt"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+</android.support.constraint.ConstraintLayout>

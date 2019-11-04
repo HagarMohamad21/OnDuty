@@ -50,10 +50,17 @@
     <string name="requestedLeave">اجازة مطلوبة</string>
     <string name="used">مستخدم</string>
     <string name="remian">باقي</string>
-    <string name="duty">Duty</string>
+    <string name="duty">دوام</string>
     <string name="change_password">تغيير كلمة السر</string>
     <string name="currentPassword">Current password</string>
     <string name="newPassword">New password</string>
     <string name="confirmPassword">Confirm password</string>
+    <string name="start">من</string>
+    <string name="end">الي</string>
+    <string name="resumeToDuty">العودة الي الدوام</string>
+    <string name="total">المجموع</string>
+    <string name="reasons">السبب...</string>
+    <string name="submit">تأكيد</string>
+    <string name="select_leave_type">Select leave type</string>
 
 </resources>

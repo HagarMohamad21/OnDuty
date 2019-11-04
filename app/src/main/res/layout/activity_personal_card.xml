@@ -120,7 +120,8 @@
             app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/NewPasswordEditTxt" />
 
-        <Button
+        <TextView
+            android:gravity="center"
             android:id="@+id/saveBtn"
             android:layout_width="0dp"
             android:layout_height="@dimen/viewsHeight"
@@ -136,7 +137,8 @@
             app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/ConfirmNewPasswordEditTxt" />
 
-        <Button
+        <TextView
+            android:gravity="center"
             android:id="@+id/logoutBtn"
             android:layout_width="0dp"
             android:layout_height="@dimen/viewsHeight"

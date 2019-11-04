@@ -56,4 +56,33 @@
     <string name="currentPassword">Current password</string>
     <string name="newPassword">New password</string>
     <string name="confirmPassword">Confirm password</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="resumeToDuty">Resume to duty</string>
+    <string name="total">Total</string>
+    <string name="reasons">Reason...</string>
+    <string name="submit">Submit</string>
+    <string name="select_leave_type">Select leave type</string>
+
+    <!--         SPINNER ARRAY          -->
+    <array name="leavesEntry">
+        <item>Select leave type</item>
+        <item >Annual leaves</item>
+        <item>Public holidays</item>
+        <item>Due</item>
+         <item >Pending weekly off</item>
+        <item >Advanced annual leaves</item>
+        <item>Advanced public holidays</item>
+        <item>Advanced due</item>
+         <item >Advanced pending weekly off</item>
+
+
+
+
+
+
+
+    </array>
+
+
 </resources>
