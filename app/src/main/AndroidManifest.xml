@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.BussinessCardActivity"></activity>
+        <activity android:name=".Activities.RosterActivity"></activity>
+        <activity android:name=".Activities.VacationsActivity" />
+        <activity android:name=".Activities.BussinessCardActivity" />
         <activity android:name=".Activities.PersonalCardActivity" />
         <activity android:name=".Activities.PersonalActivity" />
         <activity android:name=".Activities.HomeActivity" />

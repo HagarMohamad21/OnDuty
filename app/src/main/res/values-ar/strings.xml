@@ -15,7 +15,7 @@
     <string name="logout">خروج</string>
     <string name="hrOffice">الموارد البشرية</string>
     <string name="action" translatable="false">الخيارات</string>
-    <string name="Id">الرقم التعريفي</string>
+    <string name="Id">الرقم التعريفي:123456GSFGAVKCV</string>
     <string name="emergencyCall">مكالمة الطوارئ</string>
     <string name="reports">تقارير</string>
     <string name="meeting">إجتماعات</string>
@@ -30,5 +30,30 @@
     <string name="phone">الهاتف</string>
     <string name="email">البريد </string>
     <string name="save">حفظ</string>
+    <string name="businessPhone">هاتف العمل</string>
+    <string name="businessEmail">بريد العمل</string>
+    <string name="businessExtNum">رقم العمل</string>
+    <string name="designation">المنصب</string>
+    <string name="basicSalary">الراتب الأساسي:</string>
+    <string name="allowance">العلاوة</string>
+    <string name="housing">السكن:</string>
+    <string name="transports">المواصلات</string>
+    <string name="telephone">الهاتف:</string>
+    <string name="serviceCharge">ثمن الخدمة:</string>
+    <string name="others">اشياء اخري:</string>
+    <string name="annualLeaves">الاجازات السنوية</string>
+    <string name="publicHolidays">الأجازات العامة</string>
+    <string name="due">اجازات مستحقة</string>
+    <string name="sickLeaves">اجازة مرضية</string>
+    <string name="pendingWeek">اجازة اسبوعية</string>
+    <string name="requestLeave">طلب اجازة</string>
+    <string name="requestedLeave">اجازة مطلوبة</string>
+    <string name="used">مستخدم</string>
+    <string name="remian">باقي</string>
+    <string name="duty">Duty</string>
+    <string name="change_password">تغيير كلمة السر</string>
+    <string name="currentPassword">Current password</string>
+    <string name="newPassword">New password</string>
+    <string name="confirmPassword">Confirm password</string>
 
 </resources>

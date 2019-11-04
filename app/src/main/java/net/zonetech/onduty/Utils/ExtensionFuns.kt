@@ -12,7 +12,7 @@ import net.zonetech.onduty.Helpers.Fonts
 fun Context.open(activity: Activity, extras: String?){
     var intent=Intent(this,activity::class.java)
     if (extras != null) {
-    intent.putExtra("EXTRA","extras")
+    intent.putExtra("EXTRA",extras)
     }
     startActivity(intent)
 }

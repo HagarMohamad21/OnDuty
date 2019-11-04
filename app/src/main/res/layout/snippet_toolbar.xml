@@ -11,7 +11,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/titleTxt"
             android:layout_marginStart="@dimen/sideMargin"
-            android:text="@string/login"
+            android:text="@string/Id"
             android:textColor="@color/white"
             android:textSize="@dimen/textSize"
             app:layout_constraintBottom_toBottomOf="parent"

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.VacationsActivity">
+    <include layout="@layout/snippet_toolbar"/>
+<include layout="@layout/guidelines"/>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remian"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/used"
+        android:layout_marginEnd="@dimen/innerSpacing"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"  />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/annualLeaves"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/publicHolidays"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/due"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sickLeaves"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView20"
+        />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pendingWeek"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintBottom_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        android:layout_marginEnd="@dimen/holidaysMargin"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/holidaysMargin"
+        android:text="0.0"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:text="@string/requestLeave"
+        android:background="@drawable/btn_background_accent_green"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+    <TextView
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/requestedLeave"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+
+</android.support.constraint.ConstraintLayout>

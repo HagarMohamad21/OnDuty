@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.home_list_item.view.*
 import net.zonetech.onduty.Activities.BussinessCardActivity
 import net.zonetech.onduty.Activities.LoginActivity
 import net.zonetech.onduty.Activities.PersonalCardActivity
+import net.zonetech.onduty.Activities.RosterActivity
 import net.zonetech.onduty.Helpers.Fonts
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.inflate
@@ -41,6 +42,12 @@ class PersonalAdapter(var context: Context,var personalList:ArrayList<String> )
                     }
                     1->{
                         context.open(LoginActivity(),"Extras")
+                    }
+                    2->{
+                        context.open(LoginActivity(),"Extras2")
+                    }
+                    3->{
+                        context.open(RosterActivity(),null)
                     }
                 }
             }

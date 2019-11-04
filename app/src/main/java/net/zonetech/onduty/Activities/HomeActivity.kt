@@ -21,7 +21,6 @@ class HomeActivity : AppCompatActivity() {
 
     private fun initViews() {
         setupFonts()
-        titleTxt.text=getString(R.string.Id)+": 123456GSFGAVKCV"
         menuIcon.text=getString(R.string.menuIcon)
 
         populateList()

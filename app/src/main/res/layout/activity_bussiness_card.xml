@@ -5,5 +5,223 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.BussinessCardActivity">
+<include layout="@layout/snippet_toolbar"/>
+<include layout="@layout/guidelines"/>
+    <EditText
+        android:id="@+id/businessPhone"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="@string/businessPhone"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+
+    <EditText
+        android:id="@+id/businessEmail"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:hint="@string/businessEmail"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/businessPhone" />
+
+    <EditText
+        android:id="@+id/businessExtNum"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:hint="@string/businessExtNum"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/businessEmail" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/businessExtNum"
+        android:background="@color/lightGrey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designation"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basicSalary"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/allowance"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/housing"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transports"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+      />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telephone"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+         />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:text="@string/serviceCharge"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"  />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        android:text="@string/others"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        android:text="Chief concierge"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        android:text="0.0 USD"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:text="0.0 USD"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        android:text="0.0 USD"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        android:text="0.0 USD"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        android:text="0.0 USD"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        android:text="0.0 USD"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"/>
+
 
 </android.support.constraint.ConstraintLayout>

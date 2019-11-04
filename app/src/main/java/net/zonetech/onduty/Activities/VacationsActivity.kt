@@ -6,13 +6,13 @@ import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupFonts
 
-class BussinessCardActivity : AppCompatActivity() {
+class VacationsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bussiness_card)
+        setContentView(R.layout.activity_vacations)
         setupFonts()
-        setListeners()
+       setListeners()
     }
 
     private fun setListeners() {

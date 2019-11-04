@@ -22,7 +22,5 @@ class PersonalCardActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        setupFonts()
-        titleTxt.text=getString(R.string.Id)+": 123456GSFGAVKCV"
-    }
+        setupFonts() }
 }

@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.open
 import net.zonetech.onduty.Utils.setupFonts
+import net.zonetech.onduty.Utils.toggleVisibilty
 
 class LoginActivity : AppCompatActivity() {
 
@@ -20,15 +21,21 @@ class LoginActivity : AppCompatActivity() {
 
     private fun initViews() {
         menuIcon.text=getString(R.string.menuIcon)
+        titleTxt.text=getString(R.string.login)
         if(intent.getStringExtra("EXTRA")!=null){
             userNameEditTxt.setText("123456GSFGAVKCV")
+            forgotPasswordTxt.toggleVisibilty(false)
+            forgotUserNameTxt.toggleVisibilty(false)
         }
     }
 
     private fun setListeners() {
         loginBtn.setOnClickListener {
-            if(intent.getStringExtra("EXTRA")!=null){
+            if(intent.getStringExtra("EXTRA")=="Extras"){
                 open(BussinessCardActivity(),null)
+                       }
+            else if (intent.getStringExtra("EXTRA")=="Extras2"){
+                open(VacationsActivity(),null)
             }
             else
             open(HomeActivity(), null)
