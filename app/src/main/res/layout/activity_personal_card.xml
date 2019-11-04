@@ -1,166 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.PersonalCardActivity">
-    <include layout="@layout/snippet_toolbar"/>
-    <include layout="@layout/guidelines"/>
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        tools:context=".Activities.PersonalCardActivity">
+        <include layout="@layout/snippet_toolbar"/>
+        <include layout="@layout/guidelines"/>
 
-    <TextView
-        android:id="@+id/profileImage"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:text="@string/userIcon"
-        android:gravity="center"
-        android:tag="icon"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        android:background="@drawable/grey_circle_bg"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+        <TextView
+            android:id="@+id/profileImage"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:text="@string/userIcon"
+            android:gravity="center"
+            android:tag="icon"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:background="@drawable/grey_circle_bg"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
 
 
 
 
-    <EditText
-        android:id="@+id/emailEditTxt"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/edit_text_back"
-        android:hint="@string/email"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textCursorDrawable="@null"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+        <EditText
+            android:id="@+id/emailEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/email"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage" />
 
-    <EditText
-        android:id="@+id/cellphoneEditTxt"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:textSize="@dimen/textSize"
-        android:background="@drawable/edit_text_back"
-        android:hint="@string/phone"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textCursorDrawable="@null"
-        android:layout_marginTop="@dimen/innerSpacing"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditTxt" />
-    <EditText
-        android:id="@+id/emergencyCellphoneEditTxt"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:textSize="@dimen/textSize"
-        android:background="@drawable/edit_text_back"
-        android:hint="@string/emegencyCellphone"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textCursorDrawable="@null"
-        android:layout_marginTop="@dimen/innerSpacing"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/cellphoneEditTxt" />
+        <EditText
+            android:id="@+id/cellphoneEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:textSize="@dimen/textSize"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/phone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/innerSpacing"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditTxt" />
+        <EditText
+            android:id="@+id/emergencyCellphoneEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:textSize="@dimen/textSize"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/emegencyCellphone"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:layout_marginTop="@dimen/innerSpacing"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/cellphoneEditTxt" />
 
-    <EditText
-        android:id="@+id/passwordEditTxt"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/edit_text_back"
-        android:hint="@string/currentPassword"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textCursorDrawable="@null"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+        <EditText
+            android:id="@+id/passwordEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/currentPassword"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
-    <EditText
-        android:id="@+id/NewPasswordEditTxt"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/edit_text_back"
-        android:hint="@string/newPassword"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textCursorDrawable="@null"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/passwordEditTxt" />
+        <EditText
+            android:id="@+id/NewPasswordEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/newPassword"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditTxt" />
 
-    <EditText
-        android:id="@+id/ConfirmNewPasswordEditTxt"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/edit_text_back"
-        android:hint="@string/confirmPassword"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:textCursorDrawable="@null"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/NewPasswordEditTxt" />
+        <EditText
+            android:id="@+id/ConfirmNewPasswordEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/confirmPassword"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/NewPasswordEditTxt" />
 
-    <Button
-        android:id="@+id/saveBtn"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:text="@string/save"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:textAllCaps="false"
-        android:textSize="@dimen/textSize"
-        android:textColor="@color/white"
-        android:background="@drawable/btn_background_accent_green"
-        app:layout_constraintTop_toBottomOf="@id/ConfirmNewPasswordEditTxt"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:layout_marginBottom="@dimen/innerSpacing"
+            android:background="@drawable/btn_background_accent_green"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/ConfirmNewPasswordEditTxt" />
 
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="0dp"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/btn_background_accent_green"
-        android:text="@string/logout"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/btn_background_accent_green"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/innerSpacing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
 
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/change_password"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:textSize="12sp"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/divider7" />
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_password"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
 
-    <View
-        android:id="@+id/divider7"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:background="@color/lightGrey"
-        app:layout_constraintTop_toBottomOf="@+id/emergencyCellphoneEditTxt"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:background="@color/lightGrey"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyCellphoneEditTxt"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
 
-</android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
