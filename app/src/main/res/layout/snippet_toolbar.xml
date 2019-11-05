@@ -2,6 +2,7 @@
 <merge xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:background="@color/colorPrimaryDark"
         android:layout_height="@dimen/toolbarHeight">

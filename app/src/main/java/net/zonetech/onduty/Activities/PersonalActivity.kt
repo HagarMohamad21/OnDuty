@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_my_office.*
 import kotlinx.android.synthetic.main.activity_personal.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.Adapters.HomeAdapter
@@ -11,6 +12,7 @@ import net.zonetech.onduty.Adapters.PersonalAdapter
 import net.zonetech.onduty.FixedLists.initHomeList
 import net.zonetech.onduty.FixedLists.initPersonalList
 import net.zonetech.onduty.R
+import net.zonetech.onduty.Utils.setupBack
 import net.zonetech.onduty.Utils.setupFonts
 
 class PersonalActivity : AppCompatActivity() {
@@ -19,14 +21,10 @@ class PersonalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal)
        initViews()
-        setListeners()
+        setupBack(menuIcon)
     }
 
-    private fun setListeners() {
-        menuIcon.setOnClickListener {
-            finish()
-        }
-    }
+
 
     private fun initViews() {
         setupFonts()

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/leaveTypeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pendingWeek"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LeaveStatusTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pending"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/leaveDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/11/2019-10/11/2019"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveTypeTxt" />
+
+    <TextView
+        android:id="@+id/reasonTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        android:text="@string/reasons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaveDateTxt" />
+
+    <TextView
+        android:id="@+id/totalDaysTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="05 Days"
+        app:layout_constraintStart_toEndOf="@+id/leaveDateTxt"
+        app:layout_constraintTop_toBottomOf="@+id/leaveTypeTxt" />
+</android.support.constraint.ConstraintLayout>

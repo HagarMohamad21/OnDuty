@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/leaveSpinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:padding="5dp"
+        android:entries="@array/leavesEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/leaveSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/leaveSpinner"
+        app:layout_constraintTop_toTopOf="@+id/leaveSpinner" />
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@color/lightGrey"
+        app:layout_constraintTop_toBottomOf="@+id/leaveSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:id="@+id/startEditTxt"
+        android:hint="@string/start"
+        app:layout_constraintTop_toBottomOf="@+id/divider8"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:id="@+id/textView37"
+        android:hint="@string/end"
+        app:layout_constraintTop_toBottomOf="@+id/startEditTxt"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"  />
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:inputType="date"
+        android:id="@+id/textView38"
+        android:hint="@string/resumeToDuty"
+        app:layout_constraintTop_toBottomOf="@+id/textView37"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"  />
+
+    <EditText
+        android:background="@drawable/edit_text_back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/textView39"
+        android:hint="@string/total"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"  />
+</merge>

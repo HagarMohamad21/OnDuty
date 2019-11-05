@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dutyEntry" >
+        <item>حدد ساعات العمل</item>
+        <item>اجازة اسبوعية</item>
+        <item> 05:00-14:00 صباحا</item>
+        <item> 06:00-15:00 صباحا</item>
+        <item> 07:00-16:00 صباحا</item>
+        <item> 08:00-17:00 صباحا</item>
+        <item> 09:00-16:00 صباحا</item>
+        <item> 10:00-19:00 ظهرا</item>
+        <item> 11:00-20:00 ظهرا </item>
+        <item> 12:00-21:00 ظهرا </item>
+        <item> 13:00-22:00 مساء</item>
+        <item> 14:00-23:00 مساء</item>
+        <item> 15:00-00:00 مساء</item>
+        <item> 16:00-01:00 مساء</item>
+        <item> 17:00-02:00 مساء</item>
+        <item> 18:00-03:00 ليلا</item>
+        <item> 19:00-04:00 ليلا</item>
+        <item> 20:00-05:00 ليلا</item>
+    </string-array>
+
+    <array name="leavesEntry">
+        <item>حدد نوع الاجازة</item>
+        <item>الاجازات السنوية</item>
+        <item>الأجازات العامة</item>
+        <item>اجازات مستحقة</item>
+        <item>اجازة مرضية</item>
+        <item>الاجازات السنوية متقدم</item>
+        <item>الأجازات العامة متقدم</item>
+        <item>اجازات مستحقة متقدم</item>
+        <item>اجازة مرضية متقدم</item>
+
+
+    </array>
+</resources>

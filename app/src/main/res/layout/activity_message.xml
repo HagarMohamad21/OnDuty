@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MessageActivity">
+    <include layout="@layout/snippet_toolbar"/>
+    <include layout="@layout/guidelines"/>
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:40 AM"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        />
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:text="11/5/2019"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Sarah"
+        app:layout_constraintStart_toEndOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Front office department"
+        app:layout_constraintStart_toEndOf="@+id/textView55"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/department"
+        app:layout_constraintStart_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        app:layout_constraintStart_toStartOf="@+id/textView55"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Ali Muhammad"
+        app:layout_constraintStart_toEndOf="@+id/textView56"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <EditText
+        android:id="@+id/emailEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="@string/message"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/send"
+        android:background="@drawable/btn_background_accent_green"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTxt" />
+
+</android.support.constraint.ConstraintLayout>

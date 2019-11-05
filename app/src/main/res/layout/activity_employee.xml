@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EmployeeActivity">
+<include layout="@layout/snippet_toolbar"/>
+    <include layout="@layout/guidelines"/>
+
+    <TextView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/grey_circle_bg"
+        android:gravity="center"
+        android:tag="icon"
+        android:text="@string/userIcon"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Ali Muhammad"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toTopOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Chief concierge"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@color/lightGrey"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/business"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ali.muhammad@gmail.com"
+        android:textColorLink="@color/grey"
+       android:autoLink="email"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01143823186"
+        android:textColorLink="@color/grey"
+        android:autoLink="phone"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/textView47"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@color/lightGrey"
+        app:layout_constraintTop_toBottomOf="@+id/textView48"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/personal"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ali.muhammad@gmail.com"
+        android:autoLink="email"
+        android:textColorLink="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01143823186"
+        android:autoLink="phone"
+        android:textSize="@dimen/textSize"
+        android:textColorLink="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <TextView
+        android:id="@+id/messageBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/btn_background_accent_green"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        android:text="@string/message"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+</android.support.constraint.ConstraintLayout>

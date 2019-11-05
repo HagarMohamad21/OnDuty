@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EditLeaveActivity">
+
+    <include layout="@layout/snippet_toolbar" />
+
+    <include layout="@layout/guidelines" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/leaveDataRoot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine">
+
+        <TextView
+            android:id="@+id/leaveTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pendingWeek"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/LeaveStatusTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pending"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/leaveDateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/11/2019-10/11/2019"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leaveTypeTxt" />
+
+        <TextView
+            android:id="@+id/reasonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reasons"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leaveDateTxt" />
+
+        <TextView
+            android:id="@+id/totalDaysTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="05 Days"
+            app:layout_constraintStart_toEndOf="@+id/leaveDateTxt"
+            app:layout_constraintTop_toBottomOf="@+id/leaveTypeTxt" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/requestLeaveRoot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/divider9">
+
+        <include layout="@layout/layout_request_leave" />
+    </android.support.constraint.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@color/lightGrey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/leaveDataRoot" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/btn_background_accent_green"
+        android:gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/approvalsList"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/btn_background_red"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@id/approvalsList" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/approvals"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintTop_toBottomOf="@id/requestLeaveRoot"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/approvalsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView41"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+</android.support.constraint.ConstraintLayout>

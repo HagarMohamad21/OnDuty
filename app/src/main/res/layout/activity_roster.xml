@@ -71,5 +71,16 @@
             android:textSize="@dimen/textSize"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/changeDutyTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/change"
+            android:textSize="@dimen/textSize"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
     </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

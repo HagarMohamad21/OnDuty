@@ -62,5 +62,26 @@
     <string name="reasons">السبب...</string>
     <string name="submit">تأكيد</string>
     <string name="select_leave_type">Select leave type</string>
+    <string name="pending">منتظر</string>
+    <string name="update">تحديث</string>
+    <string name="cancel">الغاء</string>
+    <string name="approvals">الموافقة</string>
+    <string name="manager">المدير</string>
+    <string name="select_as_pref">اختيار كوقت مفضل</string>
+    <string name="approval_txt">هذاالوقت مفضل ويجب الموافقة عليه</string>
+    <string name="change">تغيير</string>
+    <string name="officeOnDuty">Office on duty</string>
+    <string name="officeDuty">Office duty</string>
+    <string name="handovers">Handovers</string>
+    <string name="briefing">Briefing</string>
+    <string name="business">Business</string>
+    <string name="message">Message</string>
+    <string name="from">من:</string>
+    <string name="department">قسم:</string>
+    <string name="to">إلي:</string>
+    <string name="send">ارسال</string>
+    <string name="followTask">Tasks to follow</string>
+    <string name="createTask">Create a task</string>
+
 
 </resources>

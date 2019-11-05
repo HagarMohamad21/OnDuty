@@ -26,3 +26,15 @@ fun Context.initPersonalList():ArrayList<String>{
 
 
 return personalList}
+fun Context.initOfficeList():ArrayList<String>{
+ val officeList=ArrayList<String>()
+
+ officeList.add(getString(R.string.officeOnDuty))
+ officeList.add(getString(R.string.officeDuty))
+ officeList.add(getString(R.string.handovers))
+ officeList.add(getString(R.string.briefing))
+ officeList.add(getString(R.string.messages))
+
+
+ return officeList
+}

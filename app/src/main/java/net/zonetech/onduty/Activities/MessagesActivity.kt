@@ -7,17 +7,12 @@ import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
 import net.zonetech.onduty.Utils.setupFonts
 
-class PersonalCardActivity : AppCompatActivity() {
+class MessagesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_personal_card)
-        initViews()
+        setContentView(R.layout.activity_messages)
+        setupFonts()
         setupBack(menuIcon)
     }
-
-
-
-    private fun initViews() {
-        setupFonts() }
 }

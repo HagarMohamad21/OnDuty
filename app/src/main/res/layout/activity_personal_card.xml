@@ -121,36 +121,34 @@
             app:layout_constraintTop_toBottomOf="@+id/NewPasswordEditTxt" />
 
         <TextView
-            android:gravity="center"
             android:id="@+id/saveBtn"
             android:layout_width="0dp"
             android:layout_height="@dimen/viewsHeight"
-            android:layout_marginBottom="@dimen/innerSpacing"
+            android:layout_marginTop="@dimen/innerSpacing"
             android:background="@drawable/btn_background_accent_green"
+            android:gravity="center"
             android:text="@string/save"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:layout_marginTop="@dimen/innerSpacing"
             android:textSize="@dimen/textSize"
-            app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
             app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/ConfirmNewPasswordEditTxt" />
 
         <TextView
-            android:gravity="center"
             android:id="@+id/logoutBtn"
             android:layout_width="0dp"
             android:layout_height="@dimen/viewsHeight"
             android:background="@drawable/btn_background_accent_green"
+            android:gravity="center"
             android:text="@string/logout"
+            android:layout_marginTop="@dimen/innerSpacing"
             android:textAllCaps="false"
-            android:layout_marginBottom="@dimen/innerSpacing"
             android:textColor="@color/white"
             android:textSize="@dimen/textSize"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-            app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
 
         <TextView
             android:id="@+id/textView35"

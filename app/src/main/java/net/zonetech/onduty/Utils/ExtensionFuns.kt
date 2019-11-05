@@ -20,8 +20,16 @@ fun Context.open(activity: Activity, extras: String?){
 fun Activity.setupFonts(){
     Fonts(this).setupFonts(findViewById(android.R.id.content))
 }
+fun Activity.setupBack(view: View){
+    view.setOnClickListener {
+        finish()
+    }
+}
+fun Context.setupFonts(itemView:View){
+    Fonts(this).setupFonts(itemView)
+}
 
-fun Context.inflate(layout:Int,viewGroup: ViewGroup):View{
+fun Context.inflate(layout:Int,viewGroup: ViewGroup?):View{
     val view =LayoutInflater.from(this).inflate(layout,viewGroup,false)
      return view
 }

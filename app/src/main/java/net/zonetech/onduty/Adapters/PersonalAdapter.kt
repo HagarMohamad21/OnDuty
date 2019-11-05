@@ -13,6 +13,7 @@ import net.zonetech.onduty.Helpers.Fonts
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.inflate
 import net.zonetech.onduty.Utils.open
+import net.zonetech.onduty.Utils.setupFonts
 
 class PersonalAdapter(var context: Context,var personalList:ArrayList<String> )
     :RecyclerView.Adapter<PersonalAdapter.PersonalHolder>() {
@@ -33,7 +34,7 @@ class PersonalAdapter(var context: Context,var personalList:ArrayList<String> )
 
     inner class PersonalHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(pos: Int) {
-            Fonts(context).setupFonts(itemView)
+           context.setupFonts(itemView)
             itemView.regularTxtView.text=personalList[pos]
             itemView.setOnClickListener{
                 when(pos){

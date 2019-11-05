@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dutyEntry" >
+        <item>Select duty hours</item>
+        <item>Weekly off</item>
+        <item>AM 05:00-14:00</item>
+        <item>AM 06:00-15:00</item>
+        <item>AM 07:00-16:00</item>
+        <item>AM 08:00-17:00</item>
+        <item>AM 09:00-16:00</item>
+        <item>MD 10:00-19:00</item>
+        <item>MD 11:00-20:00</item>
+        <item>MD 12:00-21:00</item>
+        <item>PM 13:00-22:00</item>
+        <item>PM 14:00-23:00</item>
+        <item>PM 15:00-00:00</item>
+        <item>PM 16:00-01:00</item>
+        <item>PM 17:00-02:00</item>
+        <item>NT 18:00-03:00</item>
+        <item>NT 19:00-04:00</item>
+        <item>NT 20:00-05:00</item>
+
+
+    </string-array>
+
+    <!--         SPINNER ARRAY          -->
+    <array name="leavesEntry">
+        <item>Select leave type</item>
+        <item>Annual leaves</item>
+        <item>Public holidays</item>
+        <item>Due</item>
+        <item>Pending weekly off</item>
+        <item>Advanced annual leaves</item>
+        <item>Advanced public holidays</item>
+        <item>Advanced due</item>
+        <item>Advanced pending weekly off</item>
+
+
+    </array>
+</resources>

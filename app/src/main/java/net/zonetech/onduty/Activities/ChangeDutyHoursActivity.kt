@@ -7,17 +7,14 @@ import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
 import net.zonetech.onduty.Utils.setupFonts
 
-class PersonalCardActivity : AppCompatActivity() {
+class ChangeDutyHoursActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_personal_card)
-        initViews()
+        setContentView(R.layout.activity_change_duty_hours)
+        setupFonts()
         setupBack(menuIcon)
     }
 
 
-
-    private fun initViews() {
-        setupFonts() }
 }

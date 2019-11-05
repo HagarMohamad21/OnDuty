@@ -63,26 +63,26 @@
     <string name="reasons">Reason...</string>
     <string name="submit">Submit</string>
     <string name="select_leave_type">Select leave type</string>
-
-    <!--         SPINNER ARRAY          -->
-    <array name="leavesEntry">
-        <item>Select leave type</item>
-        <item >Annual leaves</item>
-        <item>Public holidays</item>
-        <item>Due</item>
-         <item >Pending weekly off</item>
-        <item >Advanced annual leaves</item>
-        <item>Advanced public holidays</item>
-        <item>Advanced due</item>
-         <item >Advanced pending weekly off</item>
-
-
-
-
-
-
-
-    </array>
+    <string name="pending">Pending</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="approvals">Approvals</string>
+    <string name="manager">Manager</string>
+    <string name="select_as_pref">Request as preference</string>
+    <string name="approval_txt">This request is just a preference and still need approval</string>
+    <string name="change">Change</string>
+    <string name="officeOnDuty">Office on duty</string>
+    <string name="officeDuty">Office duty</string>
+    <string name="handovers">Handovers</string>
+    <string name="briefing">Briefing</string>
+    <string name="business">Business</string>
+    <string name="message">Message</string>
+    <string name="from">From:</string>
+    <string name="department">Department:</string>
+    <string name="to">To:</string>
+    <string name="send">Send</string>
+    <string name="followTask">Tasks to follow</string>
+    <string name="createTask">Create a task</string>
 
 
 </resources>
