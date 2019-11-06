@@ -22,6 +22,40 @@
 
 
     </string-array>
+    <string-array name="reminders" >
+        <item>Set a reminder</item>
+        <item>None</item>
+        <item>05 Minutes</item>
+        <item>10 Minutes</item>
+        <item>15 Minutes</item>
+        <item>30 Minutes</item>
+        <item>01 Hour</item>
+        <item>02 Hours</item>
+        <item>03 Hours</item>
+    </string-array>
+
+    <string-array name="employees" >
+        <item>Employee name</item>
+        <item>Employee name</item>
+        <item>Employee name</item>
+        <item>Employee name</item>
+        <item>Employee name</item>
+        <item>Custom</item>
+
+    </string-array>
+    <string-array name="employeesReply" >
+        <item>All reply</item>
+        <item>Supervisors</item>
+        <item>Managers</item>
+        <item>Head of departments</item>
+    </string-array>
+    <string-array name="departments">
+        <item>Front office department</item>
+        <item>Engineering department</item>
+        <item>Housekeeping department</item>
+        <item>Human resources departments</item>
+    </string-array>
+
 
     <!--         SPINNER ARRAY          -->
     <array name="leavesEntry">

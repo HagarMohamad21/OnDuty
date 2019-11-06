@@ -82,6 +82,15 @@
     <string name="send">ارسال</string>
     <string name="followTask">Tasks to follow</string>
     <string name="createTask">Create a task</string>
+    <string name="briefingToday">Briefing on today</string>
+    <string name="createBriefing">Create briefing</string>
+    <string name="company">الشركة</string>
+    <string name="meetingRooms">غرفة الإجتماعات</string>
+    <string name="resAndLounge">مطاعم واستراحة</string>
+    <string name="spa">منتجع</string>
+    <string name="recreationAndWater">الإستجمام و الألعاب المائية</string>
+    <string name="babySitter">مجالسة الأطفال</string>
+    <string name="tennisCourt">صالة التنس</string>
 
 
 </resources>

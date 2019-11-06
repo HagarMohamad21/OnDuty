@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CompanyActivity">
+    <include layout="@layout/snippet_toolbar"/>
+    <include layout="@layout/guidelines"/>
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AbuHanak Hotel"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:autoLink="email"
+        android:textColorLink="@color/grey"
+        android:text="Soud.abuhanak.com"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView57"
+        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Soud@buhanak.com"
+        android:textSize="@dimen/textSize"
+        android:autoLink="email"
+        android:textColorLink="@color/grey"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView71"
+        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="01143517895"
+        android:autoLink="phone"
+        android:textColorLink="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView72"
+        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01143517895"
+        android:autoLink="phone"
+        android:textColorLink="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView73"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <TextView
+        android:id="@+id/textView75"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Company address Company address Company address Company address Company address Company address Company address "
+        app:layout_constraintStart_toStartOf="@+id/textView74"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+</android.support.constraint.ConstraintLayout>

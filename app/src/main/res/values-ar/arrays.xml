@@ -20,6 +20,10 @@
         <item> 19:00-04:00 ليلا</item>
         <item> 20:00-05:00 ليلا</item>
     </string-array>
+    <string-array name="reminders" />
+    <string-array name="employees" />
+    <string-array name="employeesReply" />
+    <string-array name="departments" />
 
     <array name="leavesEntry">
         <item>حدد نوع الاجازة</item>

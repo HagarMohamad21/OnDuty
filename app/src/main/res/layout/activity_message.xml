@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.MessageActivity">
-    <include layout="@layout/snippet_toolbar"/>
+
+    <include layout="@layout/snippet_toolbar" />
     <include layout="@layout/guidelines"/>
     <TextView
         android:id="@+id/textView46"
@@ -69,17 +70,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/to"
+        app:layout_constraintBottom_toBottomOf="@+id/employeesSpinner"
         app:layout_constraintStart_toStartOf="@+id/textView55"
-        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+        app:layout_constraintTop_toTopOf="@+id/employeesSpinner" />
 
-    <TextView
-        android:id="@+id/textView57"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/employeesSpinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
         android:layout_marginStart="5dp"
-        android:text="Ali Muhammad"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:entries="@array/employees"
+        android:padding="5dp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditTxt"
         app:layout_constraintStart_toEndOf="@+id/textView56"
         app:layout_constraintTop_toBottomOf="@+id/textView54" />
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/employeesSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/employeesSpinner"
+        app:layout_constraintTop_toTopOf="@+id/employeesSpinner" />
 
     <EditText
         android:id="@+id/emailEditTxt"
@@ -94,20 +115,57 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+        app:layout_constraintTop_toBottomOf="@+id/employeesSpinner" />
 
     <TextView
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/innerSpacing"
-        android:text="@string/send"
         android:background="@drawable/btn_background_accent_green"
-        android:textSize="@dimen/textSize"
+        android:gravity="center"
+        android:text="@string/send"
         android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/innerSpacing"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/replySpinner" />
+
+    <CheckBox
+        android:id="@+id/replyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Reply"
+        app:layout_constraintBottom_toBottomOf="@+id/replySpinner"
+        app:layout_constraintStart_toStartOf="@+id/emailEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/replySpinner" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/replySpinner"
+        android:layout_width="0dp"
+        android:clickable="false"
+       android:entries="@array/employeesReply"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:layout_height="@dimen/viewsHeight"
+        app:layout_constraintEnd_toEndOf="@+id/emailEditTxt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/replyCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/emailEditTxt" />
+
+    <TextView
+        android:id="@+id/dropDownArrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/replySpinner"
+        app:layout_constraintEnd_toEndOf="@+id/replySpinner"
+        app:layout_constraintTop_toTopOf="@+id/replySpinner" />
 
 </android.support.constraint.ConstraintLayout>

@@ -7,4 +7,25 @@
     tools:context=".Activities.MessagesActivity">
     <include layout="@layout/snippet_toolbar"/>
     <include layout="@layout/guidelines"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagesList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/sendMessageBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:text="Send message"
+        android:gravity="center"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_background_accent_green"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideLine"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
 </android.support.constraint.ConstraintLayout>

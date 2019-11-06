@@ -24,14 +24,23 @@ class OfficeAdapter(var context: Context,var officeList:ArrayList<String>) :Recy
         fun bind(pos:Int) {
             context.setupFonts(itemView)
             itemView.regularTxtView.text=officeList[pos]
-            if(pos==2) itemView.dropDownArrow.toggleVisibilty(true)
+            if(pos==2) {
+                itemView.dropDownArrow.toggleVisibilty(true)
+                itemView.handoverList.firstLineTxt.text=context.getString(R.string.followTask)
+                itemView.handoverList.secondLineTxt.text=context.getString(R.string.createTask)
+            }
+            else if(pos==3){
+                itemView.dropDownArrow.toggleVisibilty(true)
+                itemView.handoverList.firstLineTxt.text=context.getString(R.string.briefingToday)
+                itemView.handoverList.secondLineTxt.text=context.getString(R.string.createBriefing)
+            }
             itemView.setOnClickListener{
                 when(pos){
                     0,1->{
                         context.open(OfficeOnDutyActivity(), null)
                     }
 
-                    2->{
+                    2,3->{
                         if(!isShown){
                             context.loadAnimation(R.anim.slide_down,itemView.handoverList)
                             isShown=true
@@ -41,17 +50,25 @@ class OfficeAdapter(var context: Context,var officeList:ArrayList<String>) :Recy
                             isShown=false
                             itemView.handoverList.toggleVisibilty(false)
                         }
-                        itemView.handoverList.followTaskTxt.setOnClickListener {
-                            context.open(TasksToFollowActivity(),null)
-                        }
-                        itemView.handoverList.createTaskTxt.setOnClickListener {
-                            context.open(CreateTaskActivity(),null)
-                        }
+                       if(pos==2){
+                           itemView.handoverList.firstLineTxt.setOnClickListener {
+                               context.open(TasksToFollowActivity(),null)
+                           }
+                           itemView.handoverList.secondLineTxt.setOnClickListener {
+                               context.open(CreateTaskActivity(),null)
+                           }
+                       }
+                       else if(pos==3){
+                           itemView.handoverList.firstLineTxt.setOnClickListener {
+                               context.open(BriefingActivity(),null)
+                           }
+                           itemView.handoverList.secondLineTxt.setOnClickListener {
+                               context.open(CreateBriefingActivity(),null)
+                           }
+                       }
 
                     }
-                    3->{
-                        context.open(BriefingActivity(),null)
-                    }
+
                     4->{
                         context.open(MessagesActivity(),null)
                     }

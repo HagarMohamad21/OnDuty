@@ -83,6 +83,16 @@
     <string name="send">Send</string>
     <string name="followTask">Tasks to follow</string>
     <string name="createTask">Create a task</string>
+    <string name="briefingToday">Briefing on today</string>
+    <string name="createBriefing">Create briefing</string>
+    <string name="company">Company</string>
+    <string name="meetingRooms">Meeting rooms</string>
+    <string name="resAndLounge">Restaurants&amp;Lounge</string>
+    <string name="spa">SPA</string>
+    <string name="recreationAndWater">Recreation&amp;Water sports</string>
+    <string name="babySitter">Baby sitting</string>
+    <string name="tennisCourt">Tennis court</string>
+    <string name="romanticsDinner">Romantics Dinner/Rooms</string>
 
 
 </resources>

@@ -38,3 +38,16 @@ fun Context.initOfficeList():ArrayList<String>{
 
  return officeList
 }
+fun Context.initGeneralList():ArrayList<String>{
+ val generalList=ArrayList<String>()
+    generalList.add(getString(R.string.company))
+    generalList.add(getString(R.string.meetingRooms))
+    generalList.add(getString(R.string.resAndLounge))
+    generalList.add(getString(R.string.spa))
+    generalList.add(getString(R.string.recreationAndWater))
+    generalList.add(getString(R.string.babySitter))
+    generalList.add(getString(R.string.tennisCourt))
+   generalList.add(getString(R.string.romanticsDinner))
+
+ return generalList
+}

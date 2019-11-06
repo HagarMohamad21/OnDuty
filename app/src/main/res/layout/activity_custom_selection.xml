@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CustomSelectionActivity">
+    <include layout="@layout/snippet_toolbar"/>
+    <include layout="@layout/guidelines"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="Search"
+        android:paddingStart="30dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"/>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:text="@string/searchIcon"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/iconTextSize"
+        android:tag="icon"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/editText" />
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_height="@dimen/viewsHeight"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:padding="5dp"
+        android:entries="@array/departments"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/editText"/>
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/departmentSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+        app:layout_constraintTop_toTopOf="@+id/departmentSpinner" />
+    <TextView
+        android:id="@+id/selectAllBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:visibility="gone"
+        android:background="@drawable/btn_background_accent_green"
+        android:gravity="center"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Select all"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/doneBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@id/departmentSpinner"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+
+    <TextView
+        android:id="@+id/doneBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/btn_background_accent_green"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/selectAllBtn"
+        app:layout_constraintTop_toBottomOf="@id/departmentSpinner" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selectionList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintTop_toBottomOf="@+id/selectAllBtn"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+</android.support.constraint.ConstraintLayout>

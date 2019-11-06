@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.home_list_item.view.*
+import net.zonetech.onduty.Activities.GeneralActivity
 import net.zonetech.onduty.Activities.MyOfficeActivity
 import net.zonetech.onduty.Activities.PersonalActivity
 import net.zonetech.onduty.Helpers.Fonts
@@ -49,7 +50,9 @@ class HomeAdapter(var context: Context,var homeList:ArrayList<String>) : Recycle
                     1->{
                      context.open(MyOfficeActivity(),null)
                     }
-                    2->{}
+                    2->{
+                        context.open(GeneralActivity(),null)
+                    }
                     3->{}
                     4->{}
                     5->{ if(!isShown){

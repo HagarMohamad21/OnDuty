@@ -16,19 +16,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-        android:id="@+id/dropDownArrow"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:text="@string/downArrow"
-        android:textSize="@dimen/topBarIconSize"
-        android:textColor="@color/colorAccent"
-        android:tag="icon"
-        app:layout_constraintBottom_toBottomOf="@+id/leaveSpinner"
-        app:layout_constraintEnd_toEndOf="@+id/leaveSpinner"
-        app:layout_constraintTop_toTopOf="@+id/leaveSpinner" />
+    android:id="@+id/dropDownArrow"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:text="@string/downArrow"
+    android:textSize="@dimen/topBarIconSize"
+    android:textColor="@color/colorAccent"
+    android:tag="icon"
+    app:layout_constraintBottom_toBottomOf="@+id/leaveSpinner"
+    app:layout_constraintEnd_toEndOf="@+id/leaveSpinner"
+    app:layout_constraintTop_toTopOf="@+id/leaveSpinner" />
     <View
         android:id="@+id/divider8"
         android:layout_width="0dp"

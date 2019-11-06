@@ -22,6 +22,7 @@ class RosterActivity : AppCompatActivity() {
         initViews()
         setupFonts()
         setupBack(menuIcon)
+        setListeners()
     }
 
     private fun initViews() {
@@ -32,7 +33,7 @@ class RosterActivity : AppCompatActivity() {
 
     private fun setListeners() {
 
-        calendar.setOnDateChangeListener { view, year, month, dayOfMonth ->
+        calendar.setOnDateChangeListener { _, year, month, dayOfMonth ->
             loadAnimation(R.anim.slide_down,dutyDesView)
             selectedDate="$dayOfMonth/$month/$year"
         }

@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.TaskActivity"></activity>
+        <activity android:name=".Activities.RestaurantDetailsActivity"></activity>
+        <activity android:name=".Activities.RestrauntsActivity" />
+        <activity android:name=".Activities.CompanyActivity" />
+        <activity android:name=".Activities.GeneralActivity" />
+        <activity android:name=".Activities.CustomSelectionActivity" />
+        <activity android:name=".Activities.CreateBriefingActivity" />
+        <activity android:name=".Activities.TaskActivity" />
         <activity android:name=".Activities.CreateTaskActivity" />
         <activity android:name=".Activities.MessageActivity" />
         <activity android:name=".Activities.EmployeeActivity" />
