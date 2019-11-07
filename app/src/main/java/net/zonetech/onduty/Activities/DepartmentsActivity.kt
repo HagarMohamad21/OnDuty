@@ -14,18 +14,24 @@ import net.zonetech.onduty.Utils.setupBack
 import net.zonetech.onduty.Utils.setupFonts
 import net.zonetech.onduty.Utils.toggleVisibilty
 
-class CustomSelectionActivity : AppCompatActivity() {
+class DepartmentsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_custom_selection)
-        setupFonts()
+        setContentView(R.layout.activity_departments)
         setupBack(menuIcon)
+        setupFonts()
         setListeners()
+        initViews()
+    }
+
+    private fun initViews() {
+        doneBtn.toggleVisibilty(false)
+        selectAllBtn.toggleVisibilty(false)
     }
 
     private fun setListeners() {
-        departmentSpinner.onItemSelectedListener=object :AdapterView.OnItemSelectedListener{
+        departmentSpinner.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
 
             }
@@ -36,16 +42,14 @@ class CustomSelectionActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                doneBtn.toggleVisibilty(true)
-                selectAllBtn.toggleVisibilty(true)
                 populateList()
             }
         }
     }
 
     private fun populateList() {
-        selectionList.layoutManager=LinearLayoutManager(this)
+        selectionList.layoutManager= LinearLayoutManager(this)
         selectionList.addItemDecoration(ItemDecoration(this))
-        selectionList.adapter=CustomSelectionAdapter(this,true)
+        selectionList.adapter= CustomSelectionAdapter(this,false)
     }
 }

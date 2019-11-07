@@ -5,6 +5,239 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.RestaurantDetailsActivity">
-    <include layout="@layout/snippet_toolbar"/>
-    <include layout="@layout/guidelines"/>
+
+    <include layout="@layout/snippet_toolbar" />
+
+    <include layout="@layout/guidelines" />
+
+    <TextView
+        android:id="@+id/leaveTypeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La table krug"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+
+    <TextView
+        android:id="@+id/leaveDateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurants"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/leaveTypeTxt" />
+
+    <TextView
+        android:id="@+id/textView76"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Restaurant description Restaurant description Restaurant description Restaurant description "
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/leaveDateTxt"
+        app:layout_constraintTop_toBottomOf="@+id/leaveDateTxt" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Hours:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toStartOf="@+id/textView76"
+        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Working hours...."
+        app:layout_constraintStart_toStartOf="@+id/textView77"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Manager"
+        app:layout_constraintStart_toStartOf="@+id/textView78"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/managerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Ali Muhammad"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/textView79"
+        app:layout_constraintStart_toEndOf="@+id/textView79"
+        app:layout_constraintTop_toTopOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="64dp"
+        android:layout_height="17dp"
+        android:autoLink="email"
+        android:text="Restaurants@souadabouhanak.com"
+        android:textColorLink="@color/grey"
+        app:layout_constraintStart_toStartOf="@+id/textView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extension"
+        app:layout_constraintStart_toStartOf="@+id/textView81"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Book for guest"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView82"
+        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+
+    <TextView
+        android:id="@+id/textView84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="1012"
+        app:layout_constraintStart_toEndOf="@+id/textView82"
+        app:layout_constraintTop_toTopOf="@+id/textView82" />
+
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="Name"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+
+    <EditText
+        android:id="@+id/mobileEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="Mobile"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditTxt" />
+
+    <EditText
+        android:id="@+id/roomEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edit_text_back"
+        android:hint="Room No."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/paxEditTxt"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/mobileEditTxt" />
+    <EditText
+        android:id="@+id/paxEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="Pax No."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/roomEditTxt"
+        app:layout_constraintTop_toBottomOf="@id/mobileEditTxt" />
+    <EditText
+        android:id="@+id/textView36"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edit_text_back"
+        android:hint="Set date"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/textView40"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/paxEditTxt" />
+    <EditText
+        android:id="@+id/textView40"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="Set time"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@id/paxEditTxt" />
+    <EditText
+        android:id="@+id/commentEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="Comment"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/btn_background_accent_green"
+        android:gravity="center"
+        android:text="Book"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/commentEditTxt" />
 </android.support.constraint.ConstraintLayout>

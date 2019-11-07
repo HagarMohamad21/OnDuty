@@ -51,3 +51,25 @@ fun Context.initGeneralList():ArrayList<String>{
 
  return generalList
 }
+fun Context.initHrList():ArrayList<String>{
+    val hrList=ArrayList<String>()
+    hrList.add(getString(R.string.transportations))
+    hrList.add(getString(R.string.staffCanteen))
+    hrList.add(getString(R.string.staffMedical))
+    hrList.add(getString(R.string.forms))
+    hrList.add(getString(R.string.rating))
+
+    return hrList
+}
+fun Context.initCallList():ArrayList<String>{
+    val callList=ArrayList<String>()
+    callList.add(getString(R.string.security))
+     callList.add(getString(R.string.companyDoc))
+     callList.add(getString(R.string.companyNurse))
+     callList.add(getString(R.string.firstAider))
+     callList.add(getString(R.string.engineering))
+     callList.add(getString(R.string.managerOnDuty))
+     callList.add(getString(R.string.emergency))
+
+    return callList
+}

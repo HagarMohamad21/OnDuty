@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AssignmentActivity">
+
+    <include layout="@layout/guidelines" />
+
+    <include layout="@layout/snippet_toolbar" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sarah"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine" />
+
+    <TextView
+        android:id="@+id/textView88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front office department"
+        app:layout_constraintStart_toStartOf="@+id/nameTxt"
+        app:layout_constraintTop_toBottomOf="@+id/nameTxt" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:entries="@array/assigning"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView88" />
+
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:tag="icon"
+        android:text="@string/downArrow"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/topBarIconSize"
+        app:layout_constraintBottom_toBottomOf="@+id/departmentSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+        app:layout_constraintTop_toTopOf="@+id/departmentSpinner" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="dd/mm/yy"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/departmentSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/departmentSpinner" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_back"
+        android:hint="Start"
+        android:textSize="@dimen/textSize"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText1"
+        app:layout_constraintTop_toBottomOf="@+id/departmentSpinner" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="End"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/departmentSpinner" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="dd/mm/yy"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/departmentSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_back"
+        android:hint="Start"
+        android:textSize="@dimen/textSize"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="End"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="dd/mm/yy"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/departmentSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_back"
+        android:hint="Start"
+        android:textSize="@dimen/textSize"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="End"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText8"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="dd/mm/yy"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/editText11"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/departmentSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:background="@drawable/edit_text_back"
+        android:hint="Start"
+        android:textSize="@dimen/textSize"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/editText12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText10"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="End"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText11"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+
+</android.support.constraint.ConstraintLayout>

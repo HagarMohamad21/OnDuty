@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.RestaurantDetailsActivity"></activity>
+        <activity android:name=".Activities.AssignmentActivity"></activity>
+        <activity android:name=".Activities.FirstAiderActivity" />
+        <activity android:name=".Activities.EmergencyActivity" />
+        <activity android:name=".Activities.FormsActivity" />
+        <activity android:name=".Activities.TransportationActivity" />
+        <activity android:name=".Activities.HRActivity" />
+        <activity android:name=".Activities.DepartmentsActivity" />
+        <activity android:name=".Activities.RestaurantDetailsActivity" />
         <activity android:name=".Activities.RestrauntsActivity" />
         <activity android:name=".Activities.CompanyActivity" />
         <activity android:name=".Activities.GeneralActivity" />

@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.CustomSelectionActivity">
-    <include layout="@layout/snippet_toolbar"/>
-    <include layout="@layout/guidelines"/>
+    tools:context=".Activities.DepartmentsActivity">
+<include layout="@layout/guidelines"/>
+<include layout="@layout/snippet_toolbar"/>
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
@@ -33,7 +33,21 @@
         app:layout_constraintStart_toStartOf="@+id/editText"
         app:layout_constraintTop_toTopOf="@+id/editText" />
     <android.support.v7.widget.AppCompatSpinner
-        android:id="@+id/departmentSpinner"
+    android:id="@+id/departmentSpinner"
+    android:layout_width="0dp"
+    android:layout_marginTop="@dimen/innerSpacing"
+    android:layout_height="@dimen/viewsHeight"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/textSize"
+    android:background="@drawable/edit_text_back"
+    android:padding="5dp"
+    android:entries="@array/departments"
+    app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+    app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+    app:layout_constraintTop_toBottomOf="@+id/editText"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/departmentsSelectionSpinner"
         android:layout_width="0dp"
         android:layout_marginTop="@dimen/innerSpacing"
         android:layout_height="@dimen/viewsHeight"
@@ -41,10 +55,11 @@
         android:textSize="@dimen/textSize"
         android:background="@drawable/edit_text_back"
         android:padding="5dp"
-        android:entries="@array/departments"
+        android:entries="@array/departmentsSelection"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/editText"/>
+        app:layout_constraintTop_toBottomOf="@+id/departmentSpinner"/>
+
     <TextView
         android:id="@+id/dropDownArrow"
         android:layout_width="wrap_content"
@@ -63,7 +78,6 @@
         android:id="@+id/selectAllBtn"
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"
-        android:visibility="gone"
         android:background="@drawable/btn_background_accent_green"
         android:gravity="center"
         android:layout_marginEnd="5dp"
@@ -73,9 +87,22 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintEnd_toStartOf="@+id/doneBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toBottomOf="@id/departmentSpinner"
+        app:layout_constraintTop_toBottomOf="@id/departmentsSelectionSpinner"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
-
+    <TextView
+        android:id="@+id/dropDownArrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/departmentsSelectionSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/departmentsSelectionSpinner"
+        app:layout_constraintTop_toTopOf="@+id/departmentsSelectionSpinner" />
     <TextView
         android:id="@+id/doneBtn"
         android:layout_width="0dp"
@@ -89,9 +116,8 @@
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
         android:layout_marginStart="5dp"
-        android:visibility="gone"
         app:layout_constraintStart_toEndOf="@+id/selectAllBtn"
-        app:layout_constraintTop_toBottomOf="@id/departmentSpinner" />
+        app:layout_constraintTop_toBottomOf="@id/departmentsSelectionSpinner" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/selectionList"

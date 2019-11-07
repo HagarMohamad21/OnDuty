@@ -93,6 +93,18 @@
     <string name="babySitter">Baby sitting</string>
     <string name="tennisCourt">Tennis court</string>
     <string name="romanticsDinner">Romantics Dinner/Rooms</string>
+    <string name="transportations">Transportations</string>
+    <string name="staffCanteen">Staff canteen Timing/Menu</string>
+    <string name="staffMedical">Staff medical insurance</string>
+    <string name="forms">Forms</string>
+    <string name="rating">Rating</string>
+    <string name="security">Security</string>
+    <string name="companyDoc">Company doctor</string>
+    <string name="companyNurse">Company nurse</string>
+    <string name="firstAider">First aider</string>
+    <string name="engineering">Engineering</string>
+    <string name="managerOnDuty">Manager on duty</string>
+    <string name="emergency">Emergency /Ambulance</string>
 
 
 </resources>

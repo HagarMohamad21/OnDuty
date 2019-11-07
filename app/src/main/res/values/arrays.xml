@@ -43,17 +43,35 @@
         <item>Custom</item>
 
     </string-array>
+
     <string-array name="employeesReply" >
         <item>All reply</item>
         <item>Supervisors</item>
         <item>Managers</item>
         <item>Head of departments</item>
+
+    </string-array>
+
+    <string-array name="departmentsSelection" >
+        <item>All department</item>
+        <item>Supervisors</item>
+        <item>Managers</item>
+        <item>Head of departments</item>
+
     </string-array>
     <string-array name="departments">
         <item>Front office department</item>
         <item>Engineering department</item>
         <item>Housekeeping department</item>
         <item>Human resources departments</item>
+    </string-array>
+    <string-array name="assigning" >
+        <item>Assign me as</item>
+        <item>Department Coordinator</item>
+        <item>Company manager on duty</item>
+        <item>Dep Coordinator&amp;First aider</item>
+          <item>Company manager on duty&amp;First aider</item>
+
     </string-array>
 
 

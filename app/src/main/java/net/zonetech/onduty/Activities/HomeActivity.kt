@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.HomeAdapter
 import net.zonetech.onduty.FixedLists.initHomeList
 import net.zonetech.onduty.Helpers.Fonts
 import net.zonetech.onduty.R
+import net.zonetech.onduty.Utils.open
 import net.zonetech.onduty.Utils.setupFonts
 
 class HomeActivity : AppCompatActivity() {
@@ -17,12 +18,18 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         initViews()
+        setListeners()
+    }
+
+    private fun setListeners() {
+        phoneBtn.setOnClickListener {
+            open(EmergencyActivity(),null)
+        }
     }
 
     private fun initViews() {
         setupFonts()
         menuIcon.text=getString(R.string.menuIcon)
-
         populateList()
     }
 

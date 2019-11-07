@@ -5,9 +5,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.home_list_item.view.*
-import net.zonetech.onduty.Activities.GeneralActivity
-import net.zonetech.onduty.Activities.MyOfficeActivity
-import net.zonetech.onduty.Activities.PersonalActivity
+import net.zonetech.onduty.Activities.*
 import net.zonetech.onduty.Helpers.Fonts
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.inflate
@@ -53,7 +51,9 @@ class HomeAdapter(var context: Context,var homeList:ArrayList<String>) : Recycle
                     2->{
                         context.open(GeneralActivity(),null)
                     }
-                    3->{}
+                    3->{
+                        context.open(DepartmentsActivity(),null)
+                    }
                     4->{}
                     5->{ if(!isShown){
                             context.loadAnimation(R.anim.slide_down,itemView.innerList)
@@ -64,8 +64,12 @@ class HomeAdapter(var context: Context,var homeList:ArrayList<String>) : Recycle
                             isShown=false
                             itemView.innerList.toggleVisibilty(false)
                         } }
-                    6->{}
-                    7->{}
+                    6->{
+                        context.open(CustomSelectionActivity(),null)
+                    }
+                    7->{
+                        context.open(HRActivity(),null)
+                    }
                     8->{}
                 }
 

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.widget.TextView
 import net.zonetech.onduty.Helpers.Fonts
 
 fun Context.open(activity: Activity, extras: String?){
@@ -16,7 +17,9 @@ fun Context.open(activity: Activity, extras: String?){
     }
     startActivity(intent)
 }
-
+fun TextView.changeColor(colorId:Int, context: Context){
+    this.setTextColor(context.resources.getColor(colorId))
+}
 fun Activity.setupFonts(){
     Fonts(this).setupFonts(findViewById(android.R.id.content))
 }

@@ -6,5 +6,8 @@
     <string name="downArrow" translatable="false">&#xe901;</string>
     <string name="eyeIcon" translatable="false">&#xe906;</string>
     <string name="searchIcon"  translatable="false">&#xe907;</string>
+    <string name="downloadIcon"  translatable="false">&#xe908;</string>
+    <string name="phoneIcon" translatable="false">&#xe909;</string>
+    <string name="messageIcon" translatable="false">&#xe90a;</string>
 
 </resources>

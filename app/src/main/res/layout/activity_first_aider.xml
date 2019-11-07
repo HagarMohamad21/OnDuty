@@ -4,31 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.HomeActivity">
+    tools:context=".Activities.FirstAiderActivity">
 <include layout="@layout/guidelines"/>
 <include layout="@layout/snippet_toolbar"/>
-
-
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/firstAiderList"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/innerSpacing"
-        android:id="@+id/homeList"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+
     <TextView
-        android:id="@+id/phoneBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:tag="icon"
+        android:id="@+id/messageBtn"
+        android:layout_width="0dp"
+        android:textSize="@dimen/textSize"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        android:text="@string/phoneIcon"
         android:gravity="center"
-        android:textSize="20sp"
-        android:background="@drawable/green_circle"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/btn_background_accent_green"
+        android:text="Message all"
         app:layout_constraintBottom_toTopOf="@+id/bottomGuideLine"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight" />
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
 </android.support.constraint.ConstraintLayout>
