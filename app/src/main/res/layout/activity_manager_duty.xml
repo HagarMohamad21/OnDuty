@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+ <android.support.constraint.ConstraintLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:paddingBottom="@dimen/innerSpacing"
+     tools:context=".Activities.ManagerDutyActivity">
+
+  <include layout="@layout/guidelines" />
+  <include layout="@layout/snippet_toolbar"/>
+  <TextView
+      android:id="@+id/textView106"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="The manager on duty represents the hotel manager and ensures a smooth operation in all areas....
+         The duty manager must be aware of the following at all times:"
+      android:textColor="@color/grey"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+      app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+      app:layout_constraintStart_toEndOf="@+id/guidelineLeft"/>
+  <EditText
+      android:id="@+id/editText10"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/viewsHeight"
+      android:layout_marginTop="@dimen/innerSpacing"
+      android:background="@drawable/edit_text_back"
+      android:hint="Occupancy"
+      android:paddingStart="10dp"
+      android:paddingEnd="10dp"
+      android:textColor="@color/grey"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintEnd_toStartOf="@+id/editText11"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+      app:layout_constraintTop_toBottomOf="@+id/textView106" />
+  <EditText
+      android:id="@+id/editText11"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/viewsHeight"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="@dimen/innerSpacing"
+      android:layout_marginEnd="10dp"
+      android:ems="10"
+      android:background="@drawable/edit_text_back"
+      android:hint="Arrival"
+      android:textSize="@dimen/textSize"
+      android:paddingEnd="10dp"
+      android:paddingStart="10dp"
+      app:layout_constraintEnd_toStartOf="@+id/editText12"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/editText10"
+      app:layout_constraintTop_toBottomOf="@+id/textView106" />
+  <EditText
+      android:id="@+id/editText12"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/viewsHeight"
+      android:layout_marginTop="@dimen/innerSpacing"
+      android:background="@drawable/edit_text_back"
+      android:ems="10"
+      android:hint="Departure"
+      android:paddingStart="10dp"
+      android:paddingEnd="10dp"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/editText11"
+      app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+      app:layout_constraintTop_toBottomOf="@+id/textView106" />
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/managerList"
+      app:layout_constraintTop_toBottomOf="@+id/editText11"
+      android:layout_marginTop="@dimen/innerSpacing"
+      app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+      app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+  <android.support.v7.widget.AppCompatSpinner
+      android:id="@+id/departmentSpinner"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/viewsHeight"
+      android:background="@drawable/edit_text_back"
+      android:entries="@array/attendance"
+      android:gravity="center_vertical"
+      android:layout_marginTop="2dp"
+      android:padding="5dp"
+      android:textSize="@dimen/textSize"
+      app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+      app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+      app:layout_constraintTop_toBottomOf="@+id/textView107" />
+  <TextView
+      android:id="@+id/dropDownArrow1"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginEnd="5dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:text="@string/downArrow"
+      android:textSize="@dimen/topBarIconSize"
+      android:textColor="@color/colorAccent"
+      android:tag="icon"
+      app:layout_constraintBottom_toBottomOf="@+id/departmentSpinner"
+      app:layout_constraintEnd_toEndOf="@+id/departmentSpinner"
+      app:layout_constraintTop_toTopOf="@+id/departmentSpinner" />
+
+  <TextView
+      android:id="@+id/submitBtn"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/viewsHeight"
+      android:background="@drawable/btn_background_accent_green"
+      android:gravity="center"
+      android:text="@string/submit"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="@dimen/textSize"
+      android:layout_marginTop="@dimen/innerSpacing"
+      app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+      app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+      app:layout_constraintTop_toBottomOf="@+id/departmentSpinner" />
+  <TextView
+      android:id="@+id/saveBtn"
+      android:layout_width="0dp"
+      android:layout_height="@dimen/viewsHeight"
+      android:background="@drawable/btn_background_accent_green"
+      android:gravity="center"
+      android:text="Save for later"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="@dimen/textSize"
+      android:layout_marginTop="@dimen/innerSpacing"
+      app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+      app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+      app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
+
+  <TextView
+      android:id="@+id/textView107"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/innerSpacing"
+      android:text="Send via emails"
+      app:layout_constraintStart_toStartOf="@+id/managerList"
+      app:layout_constraintTop_toBottomOf="@+id/managerList" />
+ </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -16,7 +16,7 @@ class RestrauntsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restraunts)
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setupFonts()
         populateList()
     }

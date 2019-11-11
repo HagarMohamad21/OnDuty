@@ -13,7 +13,7 @@ class AssignmentActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_assignment)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 }
    

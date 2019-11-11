@@ -18,7 +18,7 @@ class MessagesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_messages)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setListeners()
         populateList()
     }

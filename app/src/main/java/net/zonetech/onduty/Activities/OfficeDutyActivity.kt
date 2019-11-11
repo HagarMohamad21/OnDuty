@@ -13,6 +13,6 @@ class OfficeDutyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_office_duty)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 }

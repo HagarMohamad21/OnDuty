@@ -18,7 +18,7 @@ class FirstAiderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_aider)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         populateList()
         setListeners()
     }

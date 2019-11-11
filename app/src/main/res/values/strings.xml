@@ -11,7 +11,7 @@
     <string name="general">General</string>
     <string name="departments">Departments</string>
     <string name="messages">Messages</string>
-    <string name="action">Actions</string>
+    <string name="action">ME/EV/TR/CO</string>
     <string name="contacts">Contacts</string>
     <string name="hrOffice">HR office</string>
     <string name="Id">ID:123456GSFGAVKCV</string>
@@ -105,6 +105,8 @@
     <string name="engineering">Engineering</string>
     <string name="managerOnDuty">Manager on duty</string>
     <string name="emergency">Emergency /Ambulance</string>
+    <string name="manager_on_duty">Manager on duty report</string>
+    <string name="incident_report">Incident report</string>
 
 
 </resources>

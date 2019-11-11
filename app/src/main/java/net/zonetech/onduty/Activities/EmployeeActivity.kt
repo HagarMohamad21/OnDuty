@@ -15,7 +15,7 @@ class EmployeeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_employee)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setListeners()
     }
 

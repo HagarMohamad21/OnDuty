@@ -18,7 +18,7 @@ class RequestedLeavesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_requested_leaves)
         setupFonts()
         populateList()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 
     private fun populateList() {

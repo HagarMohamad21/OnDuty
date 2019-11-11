@@ -17,7 +17,7 @@ class OfficeOnDutyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_office_on_duty)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         populateList()
     }
 

@@ -4,13 +4,9 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_roster.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
-import android.widget.Toast
-import android.widget.CalendarView.OnDateChangeListener
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.*
 import java.text.SimpleDateFormat
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 import java.util.*
 
 
@@ -21,7 +17,7 @@ class RosterActivity : AppCompatActivity() {
         setContentView(net.zonetech.onduty.R.layout.activity_roster)
         initViews()
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setListeners()
     }
 

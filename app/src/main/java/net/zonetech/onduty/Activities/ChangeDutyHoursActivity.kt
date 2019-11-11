@@ -13,7 +13,7 @@ class ChangeDutyHoursActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_change_duty_hours)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 
 

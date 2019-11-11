@@ -20,7 +20,7 @@ class CustomSelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_selection)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setListeners()
     }
 

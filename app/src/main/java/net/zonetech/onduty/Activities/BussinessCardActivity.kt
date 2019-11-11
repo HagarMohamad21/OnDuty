@@ -13,7 +13,7 @@ class BussinessCardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bussiness_card)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 
 

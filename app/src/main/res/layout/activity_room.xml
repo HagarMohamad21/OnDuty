@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.constraint.ConstraintLayout
+        android:paddingBottom="@dimen/innerSpacing"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activities.RoomActivity">
+        <include layout="@layout/guidelines"/>
+        <include layout="@layout/snippet_toolbar"/>
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room number #2015"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/roomServices"
+            android:layout_marginTop="@dimen/innerSpacing"
+            app:layout_constraintTop_toBottomOf="@+id/textView46"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+        <EditText
+            android:id="@+id/desEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/edit_text_back"
+            android:hint="Comments"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@+id/roomServices" />
+        <TextView
+            android:id="@+id/submitBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:layout_marginTop="@dimen/innerSpacing"
+            android:background="@drawable/btn_background_accent_green"
+            android:gravity="center"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+            app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+            app:layout_constraintTop_toBottomOf="@id/desEditTxt" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

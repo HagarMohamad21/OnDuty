@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
-import android.widget.CheckBox
 import kotlinx.android.synthetic.main.activity_message.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
@@ -19,7 +18,7 @@ class MessageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_message)
         setupFonts()
         initViews()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setListeners()
     }
 

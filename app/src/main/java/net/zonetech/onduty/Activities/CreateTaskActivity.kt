@@ -13,6 +13,6 @@ class CreateTaskActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_task)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 }

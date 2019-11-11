@@ -13,6 +13,6 @@ class BriefingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_briefing)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 }

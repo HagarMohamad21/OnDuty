@@ -102,6 +102,8 @@
     <string name="engineering">Engineering</string>
     <string name="managerOnDuty">Manager on duty</string>
     <string name="emergency">Emergency /Ambulance</string>
+    <string name="manager_on_duty">Manager on duty report</string>
+    <string name="incident_report">Incident report</string>
 
 
 </resources>

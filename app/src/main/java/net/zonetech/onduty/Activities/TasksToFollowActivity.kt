@@ -17,7 +17,7 @@ class TasksToFollowActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tasks_to_follow)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         populateList()
 
     }

@@ -74,6 +74,23 @@
 
     </string-array>
 
+    <string-array name="attendance">
+        <item>My departments</item>
+        <item>All department</item>
+        <item>Supervisors</item>
+        <item>Managers</item>
+        <item>Head of departments</item>
+        <item>Custom</item>
+    </string-array>
+    <string-array name="meetings" >
+        <item>Meeting</item>
+        <item>Event</item>
+        <item>Training</item>
+        <item>Conference</item>
+        <item>Activity</item>
+
+    </string-array>
+
 
     <!--         SPINNER ARRAY          -->
     <array name="leavesEntry">

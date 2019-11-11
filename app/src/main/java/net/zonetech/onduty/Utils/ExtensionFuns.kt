@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import android.widget.TextView
+import net.zonetech.onduty.Activities.QrScannerActivity
 import net.zonetech.onduty.Helpers.Fonts
 
 fun Context.open(activity: Activity, extras: String?){
@@ -23,9 +24,16 @@ fun TextView.changeColor(colorId:Int, context: Context){
 fun Activity.setupFonts(){
     Fonts(this).setupFonts(findViewById(android.R.id.content))
 }
-fun Activity.setupBack(view: View){
-    view.setOnClickListener {
-        finish()
+fun Activity.setupBack(view: View, isMenu: Boolean){
+    if(isMenu){
+        view.setOnClickListener {
+            open(QrScannerActivity(),null)
+        }
+
+    }
+
+    else{view.setOnClickListener {
+        finish()}
     }
 }
 fun Context.setupFonts(itemView:View){

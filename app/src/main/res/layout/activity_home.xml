@@ -20,8 +20,8 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
     <TextView
         android:id="@+id/phoneBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:tag="icon"
         android:textColor="@color/white"
         android:textStyle="bold"

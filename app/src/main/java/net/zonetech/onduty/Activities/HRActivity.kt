@@ -18,12 +18,13 @@ class HRActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hr)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         populateList()
     }
 
     private fun populateList() {
         HrList.layoutManager=LinearLayoutManager(this)
+        HrList.addItemDecoration(ItemDecoration(this))
         HrList.adapter=HrAdapter(this,initHrList())
 
     }

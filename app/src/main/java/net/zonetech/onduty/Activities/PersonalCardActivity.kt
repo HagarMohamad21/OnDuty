@@ -13,7 +13,7 @@ class PersonalCardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal_card)
         initViews()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 
 

@@ -2,8 +2,6 @@ package net.zonetech.onduty.Activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import kotlinx.android.synthetic.main.activity_request_leave_actvity.*
 import kotlinx.android.synthetic.main.layout_request_leave.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
@@ -17,7 +15,7 @@ class RequestLeaveActvity : AppCompatActivity() {
         setContentView(R.layout.activity_request_leave_actvity)
         setupFonts()
         initViews()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
     }
 
     private fun initViews() {

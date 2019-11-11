@@ -30,13 +30,12 @@ class HomeAdapter(var context: Context,var homeList:ArrayList<String>) : Recycle
     override fun onBindViewHolder(p0: RegularHomeHolder, p1: Int) {
         p0.bind(p1)
     }
-    private var isShown=false
     inner class RegularHomeHolder(itemView: View) :RecyclerView.ViewHolder(itemView){
 
         fun bind(pos: Int) {
             Fonts(context).setupFonts(itemView)
             if(pos==5){
-                itemView.dropDownArrow.toggleVisibilty(true)
+
             }
             itemView.regularTxtView.text=homeList[pos]
 
@@ -54,23 +53,23 @@ class HomeAdapter(var context: Context,var homeList:ArrayList<String>) : Recycle
                     3->{
                         context.open(DepartmentsActivity(),null)
                     }
-                    4->{}
-                    5->{ if(!isShown){
-                            context.loadAnimation(R.anim.slide_down,itemView.innerList)
-                            isShown=true
-                            itemView.innerList.toggleVisibilty(true)
-                        } else{
-                            context.loadAnimation(R.anim.slide_up,itemView.innerList)
-                            isShown=false
-                            itemView.innerList.toggleVisibilty(false)
-                        } }
+                    4->{
+                        context.open(MessagesActivity(),null)
+                    }
+
+                    5->{
+                        context.open(MeetingsActivity(),null)
+                    }
+
                     6->{
                         context.open(CustomSelectionActivity(),null)
                     }
                     7->{
                         context.open(HRActivity(),null)
                     }
-                    8->{}
+                    8->{
+                        context.open(ReportsActivity(),null)
+                    }
                 }
 
             }

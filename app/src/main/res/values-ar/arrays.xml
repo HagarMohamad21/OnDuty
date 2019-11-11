@@ -25,6 +25,8 @@
     <string-array name="employeesReply" />
     <string-array name="departments" />
     <string-array name="assigning" />
+    <string-array name="attendance" />
+    <string-array name="meetings" />
 
     <array name="leavesEntry">
         <item>حدد نوع الاجازة</item>

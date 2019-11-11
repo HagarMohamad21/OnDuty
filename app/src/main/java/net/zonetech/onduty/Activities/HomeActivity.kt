@@ -9,7 +9,9 @@ import net.zonetech.onduty.Adapters.HomeAdapter
 import net.zonetech.onduty.FixedLists.initHomeList
 import net.zonetech.onduty.Helpers.Fonts
 import net.zonetech.onduty.R
+import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.open
+import net.zonetech.onduty.Utils.setupBack
 import net.zonetech.onduty.Utils.setupFonts
 
 class HomeActivity : AppCompatActivity() {
@@ -17,6 +19,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        setupBack(menuIcon, true)
         initViews()
         setListeners()
     }
@@ -35,6 +38,7 @@ class HomeActivity : AppCompatActivity() {
 
     private fun populateList() {
         var homeAdapter=HomeAdapter(this,initHomeList())
+        homeList.addItemDecoration(ItemDecoration(this))
         homeList.layoutManager=LinearLayoutManager(this)
         homeList.adapter=homeAdapter
     }

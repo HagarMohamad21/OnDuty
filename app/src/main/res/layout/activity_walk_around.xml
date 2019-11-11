@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WalkAroundActivity">
+<include layout="@layout/snippet_toolbar"/>
+<include layout="@layout/guidelines"/>
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:40 AM"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        />
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        android:text="05/11/2019"
+        android:layout_marginStart="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"
+        app:layout_constraintStart_toEndOf="@+id/textView46" />
+    <TextView
+    android:id="@+id/textView67"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sarah"
+    app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+    app:layout_constraintTop_toTopOf="@+id/dateTxt" />
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front office department:"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:hint="Location/department/area"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView68" />
+
+    <EditText
+        android:id="@+id/topicEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="Time"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+    <EditText
+        android:id="@+id/expEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="Comment 1"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topicEditTxt" />
+    <EditText
+        android:id="@+id/desEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:hint="Comment 2"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/expEditTxt" />
+
+    <TextView
+        android:id="@+id/submitBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/btn_background_accent_green"
+        android:gravity="center"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textView108" />
+
+    <TextView
+        android:id="@+id/textView108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Attached photos"
+        app:layout_constraintStart_toStartOf="@+id/desEditTxt"
+        app:layout_constraintTop_toBottomOf="@+id/desEditTxt" />
+</android.support.constraint.ConstraintLayout>

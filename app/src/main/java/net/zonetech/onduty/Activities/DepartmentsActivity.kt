@@ -19,7 +19,7 @@ class DepartmentsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_departments)
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setupFonts()
         setListeners()
         initViews()

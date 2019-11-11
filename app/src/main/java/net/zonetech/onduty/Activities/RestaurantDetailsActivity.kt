@@ -15,7 +15,7 @@ class RestaurantDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restaurant_details)
         setupFonts()
-        setupBack(menuIcon)
+        setupBack(menuIcon, false)
         setListeners()
     }
 
