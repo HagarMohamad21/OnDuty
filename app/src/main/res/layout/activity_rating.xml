@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RatingActivity">
+<include layout="@layout/snippet_toolbar"/>
+<include layout="@layout/guidelines"/>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/servicesSpinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textSize"
+        android:background="@drawable/edit_text_back"
+        android:padding="5dp"
+        android:entries="@array/services"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/topGuideLine"/>
+
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/downArrow"
+        android:textSize="@dimen/topBarIconSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@+id/servicesSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/servicesSpinner"
+        app:layout_constraintTop_toTopOf="@+id/servicesSpinner" />
+
+    <EditText
+        android:id="@+id/ratingEditTxt"
+        android:layout_width="30dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/textView109"
+        app:layout_constraintTop_toBottomOf="@+id/textView109" />
+
+    <TextView
+        android:id="@+id/textView109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:text="Your rating 1-10"
+        app:layout_constraintStart_toStartOf="@+id/servicesSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/servicesSpinner" />
+
+    <TextView
+        android:id="@+id/ratingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Excellent"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingEditTxt"
+        app:layout_constraintStart_toEndOf="@+id/ratingEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/ratingEditTxt" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:text="Submit"
+        android:background="@drawable/btn_background_accent_green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/ratingEditTxt" />
+</android.support.constraint.ConstraintLayout>

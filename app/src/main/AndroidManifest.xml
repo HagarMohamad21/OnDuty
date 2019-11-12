@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.QrScannerActivity"></activity>
+        <activity android:name=".Activities.IncidentReportsActivity"></activity>
+        <activity android:name=".Activities.StaffAwarenessActivity" />
+        <activity android:name=".Activities.RatingActivity" />
+        <activity android:name=".Activities.QrScannerActivity" />
         <activity android:name=".Activities.GuestActivity" />
         <activity android:name=".Activities.RoomActivity" />
         <activity android:name=".Activities.RoomInspectionActivity" />

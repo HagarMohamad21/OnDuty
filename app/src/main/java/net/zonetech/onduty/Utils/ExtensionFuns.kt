@@ -28,7 +28,7 @@ fun Activity.setupBack(view: View, isMenu: Boolean){
     if(isMenu){
         view.setOnClickListener {
             open(QrScannerActivity(),null)
-        }
+                }
 
     }
 
@@ -41,8 +41,7 @@ fun Context.setupFonts(itemView:View){
 }
 
 fun Context.inflate(layout:Int,viewGroup: ViewGroup?):View{
-    val view =LayoutInflater.from(this).inflate(layout,viewGroup,false)
-     return view
+    return LayoutInflater.from(this).inflate(layout,viewGroup,false)
 }
 
 fun View.toggleVisibilty(show:Boolean){

@@ -22,6 +22,11 @@ class CustomSelectionActivity : AppCompatActivity() {
         setupFonts()
         setupBack(menuIcon, false)
         setListeners()
+        initViews()
+    }
+var showInfo=false
+    private fun initViews() {
+        showInfo=intent.getStringExtra("EXTRA")=="showInfo"
     }
 
     private fun setListeners() {
@@ -46,6 +51,6 @@ class CustomSelectionActivity : AppCompatActivity() {
     private fun populateList() {
         selectionList.layoutManager=LinearLayoutManager(this)
         selectionList.addItemDecoration(ItemDecoration(this))
-        selectionList.adapter=CustomSelectionAdapter(this,true)
+        selectionList.adapter=CustomSelectionAdapter(this,true,showInfo)
     }
 }

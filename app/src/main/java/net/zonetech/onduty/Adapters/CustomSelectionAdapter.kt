@@ -8,12 +8,9 @@ import kotlinx.android.synthetic.main.activity_message.view.*
 import kotlinx.android.synthetic.main.custom_selection_list_item.view.*
 import net.zonetech.onduty.Activities.EmployeeActivity
 import net.zonetech.onduty.R
-import net.zonetech.onduty.Utils.changeColor
-import net.zonetech.onduty.Utils.inflate
-import net.zonetech.onduty.Utils.open
-import net.zonetech.onduty.Utils.toggleVisibilty
+import net.zonetech.onduty.Utils.*
 
-class CustomSelectionAdapter(var context: Context,var showCheckBox: Boolean) : RecyclerView.Adapter<CustomSelectionAdapter.SelectionHolder>() {
+class CustomSelectionAdapter(var context: Context,var showCheckBox: Boolean,var showInfo:Boolean) : RecyclerView.Adapter<CustomSelectionAdapter.SelectionHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int)=SelectionHolder(context.inflate(R.layout.custom_selection_list_item,p0))
 
     override fun getItemCount()=10
@@ -25,8 +22,8 @@ class CustomSelectionAdapter(var context: Context,var showCheckBox: Boolean) : R
 
     inner class SelectionHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(pos: Int) {
-                itemView.employeeCheckbox.toggleVisibilty(showCheckBox)
-                itemView.employeeNameTxt.toggleVisibilty(!showCheckBox)
+                context.setupFonts(itemView)
+             itemView.employeeCheckbox.toggleVisibilty(showCheckBox)
 
             itemView.setOnClickListener {
                 context.open(EmployeeActivity(),null)
@@ -37,6 +34,13 @@ class CustomSelectionAdapter(var context: Context,var showCheckBox: Boolean) : R
                     itemView.employeeNameTxt.changeColor(R.color.blueAccent,context)
                 }
             }
+
+            itemView.infoIcon.toggleVisibilty(showInfo&&pos%3==0)
+
+          itemView.infoIcon.setOnClickListener {
+              //open dialog with that message
+          }
+
         }
 
     }

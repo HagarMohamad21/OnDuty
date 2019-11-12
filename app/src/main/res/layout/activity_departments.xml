@@ -122,8 +122,9 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/selectionList"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintBottom_toTopOf="@+id/bottomGuideLine"
         app:layout_constraintTop_toBottomOf="@+id/selectAllBtn"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />

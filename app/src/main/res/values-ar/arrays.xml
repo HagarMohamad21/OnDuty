@@ -27,6 +27,7 @@
     <string-array name="assigning" />
     <string-array name="attendance" />
     <string-array name="meetings" />
+    <string-array name="services" />
 
     <array name="leavesEntry">
         <item>حدد نوع الاجازة</item>

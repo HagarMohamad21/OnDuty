@@ -7,12 +7,12 @@ import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
 import net.zonetech.onduty.Utils.setupFonts
 
-class MeetingsDetailsActivity : AppCompatActivity() {
+class IncidentReportsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_meetings_details)
-        setupBack(menuIcon,false)
+        setContentView(R.layout.activity_incident_reports)
         setupFonts()
+        setupBack(menuIcon,false)
     }
 }

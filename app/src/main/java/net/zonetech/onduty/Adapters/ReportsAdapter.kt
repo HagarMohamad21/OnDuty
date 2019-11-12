@@ -29,6 +29,9 @@ class ReportsAdapter(var context: Context,var reports:ArrayList<String>,var repo
                     0->{
                         context.open(ManagerDutyActivity(),null)
                     }
+                    1->{
+                        context.open(IncidentReportsActivity(),null)
+                    }
                 }
             }
         if(reportType==Common.MANAGER_REPORT){
@@ -42,6 +45,9 @@ class ReportsAdapter(var context: Context,var reports:ArrayList<String>,var repo
                   }
                   5->{
                       context.open(GuestActivity(),null)
+                  }
+                  6->{
+                      context.open(StaffAwarenessActivity(),null)
                   }
               }
           }

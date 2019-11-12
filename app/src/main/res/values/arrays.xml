@@ -90,6 +90,13 @@
         <item>Activity</item>
 
     </string-array>
+    <string-array name="services" >
+        <item>Rate service</item>
+        <item >Staff canteen food</item>
+        <item>Accommodation</item>
+        <item>Medical insurance</item>
+        <item>Transportation</item>
+    </string-array>
 
 
     <!--         SPINNER ARRAY          -->

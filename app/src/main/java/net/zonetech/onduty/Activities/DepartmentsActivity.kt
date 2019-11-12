@@ -24,10 +24,12 @@ class DepartmentsActivity : AppCompatActivity() {
         setListeners()
         initViews()
     }
-
+var showInfo=""
     private fun initViews() {
         doneBtn.toggleVisibilty(false)
         selectAllBtn.toggleVisibilty(false)
+
+
     }
 
     private fun setListeners() {
@@ -50,6 +52,6 @@ class DepartmentsActivity : AppCompatActivity() {
     private fun populateList() {
         selectionList.layoutManager= LinearLayoutManager(this)
         selectionList.addItemDecoration(ItemDecoration(this))
-        selectionList.adapter= CustomSelectionAdapter(this,false)
+        selectionList.adapter= CustomSelectionAdapter(this, showCheckBox = false, showInfo = false)
     }
 }

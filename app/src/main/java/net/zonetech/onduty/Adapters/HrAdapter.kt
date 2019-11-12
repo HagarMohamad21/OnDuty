@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.home_list_item.view.*
 import net.zonetech.onduty.Activities.FormsActivity
+import net.zonetech.onduty.Activities.RatingActivity
 import net.zonetech.onduty.Activities.TransportationActivity
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.inflate
@@ -31,6 +32,9 @@ class HrAdapter(var context: Context,var hrList:ArrayList<String>) :RecyclerView
                   }
                     3->{
                         context.open(FormsActivity(),null)
+                    }
+                    4->{
+                        context.open(RatingActivity(),null)
                     }
                 }
             }

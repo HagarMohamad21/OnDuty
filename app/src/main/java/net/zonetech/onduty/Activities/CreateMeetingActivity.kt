@@ -33,7 +33,7 @@ class CreateMeetingActivity : AppCompatActivity() {
                 id: Long
             ) {
                 if(position==5){
-                    open(CustomSelectionActivity(),null)
+                    open(CustomSelectionActivity(),"showInfo")
                 }
             }
 
