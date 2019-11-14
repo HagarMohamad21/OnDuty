@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_message.view.*
 import kotlinx.android.synthetic.main.custom_selection_list_item.view.*
 import net.zonetech.onduty.Activities.EmployeeActivity
+import net.zonetech.onduty.Dilaog.CustomDialog
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.*
 
@@ -39,6 +40,8 @@ class CustomSelectionAdapter(var context: Context,var showCheckBox: Boolean,var 
 
           itemView.infoIcon.setOnClickListener {
               //open dialog with that message
+              var customDialog=CustomDialog(context)
+              customDialog.show()
           }
 
         }

@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.FormsAdapter
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class FormsActivity : AppCompatActivity() {
@@ -17,8 +18,9 @@ class FormsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forms)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
+        setupBack(backIcon)
     }
 
     private fun populateList() {

@@ -28,6 +28,8 @@
     <string-array name="attendance" />
     <string-array name="meetings" />
     <string-array name="services" />
+    <string-array name="statuses" />
+    <string-array name="statusAssigning" />
 
     <array name="leavesEntry">
         <item>حدد نوع الاجازة</item>

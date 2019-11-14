@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.TasksAdapter
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class TasksToFollowActivity : AppCompatActivity() {
@@ -17,8 +18,9 @@ class TasksToFollowActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tasks_to_follow)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
+        setupBack(backIcon)
 
     }
 

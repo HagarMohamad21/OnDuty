@@ -5,6 +5,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class PersonalCardActivity : AppCompatActivity() {
@@ -13,7 +14,8 @@ class PersonalCardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal_card)
         initViews()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
+        setupBack(backIcon)
     }
 
 

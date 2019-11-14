@@ -97,6 +97,19 @@
         <item>Medical insurance</item>
         <item>Transportation</item>
     </string-array>
+    <string-array name="statuses">
+        <item>High importance</item>
+        <item>Confidential</item>
+        <item>Urgent</item>
+        <item>Normal</item>
+    </string-array>
+    <string-array name="statusAssigning" >
+        <item>All team</item>
+        <item>Supervisors</item>
+        <item>Managers</item>
+        <item>Supervisors&amp;Managers</item>
+        <item >Team only</item>
+    </string-array>
 
 
     <!--         SPINNER ARRAY          -->

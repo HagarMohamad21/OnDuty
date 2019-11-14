@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_staff_awareness.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class RatingActivity : AppCompatActivity() {
@@ -16,8 +17,9 @@ class RatingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rating)
         setupFonts()
-        setupBack(menuIcon,false)
+        setupMenu(menuIcon)
         setListeners()
+        setupBack(backIcon)
     }
     private fun setListeners() {
         ratingEditTxt.addTextChangedListener(object : TextWatcher {

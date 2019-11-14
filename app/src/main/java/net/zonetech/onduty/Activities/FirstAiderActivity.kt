@@ -7,10 +7,7 @@ import kotlinx.android.synthetic.main.activity_first_aider.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.Adapters.FirstAidAdapter
 import net.zonetech.onduty.R
-import net.zonetech.onduty.Utils.ItemDecoration
-import net.zonetech.onduty.Utils.open
-import net.zonetech.onduty.Utils.setupBack
-import net.zonetech.onduty.Utils.setupFonts
+import net.zonetech.onduty.Utils.*
 
 class FirstAiderActivity : AppCompatActivity() {
 
@@ -18,9 +15,10 @@ class FirstAiderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_aider)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
         setListeners()
+        setupBack(backIcon)
     }
 
     private fun setListeners() {

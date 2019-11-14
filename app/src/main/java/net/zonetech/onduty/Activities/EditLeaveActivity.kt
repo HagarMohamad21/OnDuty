@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.ApprovalsAdapter
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class EditLeaveActivity : AppCompatActivity() {
@@ -17,8 +18,9 @@ class EditLeaveActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit_leave)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
+        setupBack(backIcon)
     }
 
     private fun populateList() {

@@ -7,10 +7,7 @@ import kotlinx.android.synthetic.main.activity_meetings.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.Adapters.MeetingsAdapter
 import net.zonetech.onduty.R
-import net.zonetech.onduty.Utils.ItemDecoration
-import net.zonetech.onduty.Utils.open
-import net.zonetech.onduty.Utils.setupBack
-import net.zonetech.onduty.Utils.setupFonts
+import net.zonetech.onduty.Utils.*
 
 class MeetingsActivity : AppCompatActivity() {
 
@@ -18,9 +15,10 @@ class MeetingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meetings)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
         setListeners()
+        setupBack(backIcon)
 
     }
 

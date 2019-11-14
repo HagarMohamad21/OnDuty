@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.RequestedLeavesAdapter
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class RequestedLeavesActivity : AppCompatActivity() {
@@ -18,7 +19,8 @@ class RequestedLeavesActivity : AppCompatActivity() {
         setContentView(R.layout.activity_requested_leaves)
         setupFonts()
         populateList()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
+        setupBack(backIcon)
     }
 
     private fun populateList() {

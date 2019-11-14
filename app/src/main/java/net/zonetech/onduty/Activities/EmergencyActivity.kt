@@ -8,10 +8,7 @@ import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.Adapters.EmergencyAdapter
 import net.zonetech.onduty.FixedLists.initCallList
 import net.zonetech.onduty.R
-import net.zonetech.onduty.Utils.ItemDecoration
-import net.zonetech.onduty.Utils.open
-import net.zonetech.onduty.Utils.setupBack
-import net.zonetech.onduty.Utils.setupFonts
+import net.zonetech.onduty.Utils.*
 
 class EmergencyActivity : AppCompatActivity() {
 
@@ -19,9 +16,10 @@ class EmergencyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_emergency)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
         setListeners()
+        setupBack(backIcon)
     }
 
     private fun setListeners() {

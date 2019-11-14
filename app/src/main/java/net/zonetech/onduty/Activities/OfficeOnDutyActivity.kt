@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.EmployeesAdapter
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class OfficeOnDutyActivity : AppCompatActivity() {
@@ -17,8 +18,9 @@ class OfficeOnDutyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_office_on_duty)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
+        setupBack(backIcon)
     }
 
     private fun populateList() {

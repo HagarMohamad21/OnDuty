@@ -5,6 +5,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class CreateTaskActivity : AppCompatActivity() {
@@ -13,6 +14,7 @@ class CreateTaskActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_task)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
+        setupBack(backIcon)
     }
 }

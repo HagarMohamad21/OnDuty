@@ -24,16 +24,14 @@ fun TextView.changeColor(colorId:Int, context: Context){
 fun Activity.setupFonts(){
     Fonts(this).setupFonts(findViewById(android.R.id.content))
 }
-fun Activity.setupBack(view: View, isMenu: Boolean){
-    if(isMenu){
+fun Activity.setupMenu(view: View){
         view.setOnClickListener {
             open(QrScannerActivity(),null)
                 }
-
-    }
-
-    else{view.setOnClickListener {
-        finish()}
+}
+fun Activity.setupBack(view: View){
+    view.setOnClickListener {
+        finish()
     }
 }
 fun Context.setupFonts(itemView:View){

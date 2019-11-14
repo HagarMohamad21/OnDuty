@@ -57,34 +57,62 @@
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/userNameEditTxt" />
 
-    <EditText
+    <android.support.v7.widget.AppCompatSpinner
         android:id="@+id/textView65"
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"
         android:background="@drawable/edit_text_back"
         android:padding="5dp"
         android:paddingStart="10dp"
-        android:hint="Assign to.."
+        android:entries="@array/statusAssigning"
         android:textSize="@dimen/textSize"
         android:layout_marginTop="@dimen/innerSpacing"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/textView64" />
 
-     <EditText
-        android:id="@+id/textView66"
+     <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/taskStatusSpinner"
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"
         android:background="@drawable/edit_text_back"
         android:padding="5dp"
          android:paddingStart="10dp"
-        android:hint="Status.."
+        android:entries="@array/statuses"
         android:textSize="@dimen/textSize"
         android:layout_marginTop="@dimen/innerSpacing"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/textView65" />
 
+    <TextView
+        android:id="@+id/dropDownArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:tag="icon"
+        android:text="@string/downArrow"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/topBarIconSize"
+        app:layout_constraintBottom_toBottomOf="@+id/taskStatusSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/taskStatusSpinner"
+        app:layout_constraintTop_toTopOf="@+id/taskStatusSpinner" />
+    <TextView
+        android:id="@+id/dropDownArrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:tag="icon"
+        android:text="@string/downArrow"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/topBarIconSize"
+        app:layout_constraintBottom_toBottomOf="@+id/textView65"
+        app:layout_constraintEnd_toEndOf="@+id/textView65"
+        app:layout_constraintTop_toTopOf="@+id/textView65" />
     <TextView
         android:id="@+id/loginBtn"
         android:layout_width="0dp"
@@ -98,5 +126,5 @@
         android:textSize="@dimen/textSize"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@id/textView66" />
+        app:layout_constraintTop_toBottomOf="@id/taskStatusSpinner" />
 </android.support.constraint.ConstraintLayout>

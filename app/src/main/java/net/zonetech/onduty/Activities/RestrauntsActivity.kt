@@ -9,6 +9,7 @@ import net.zonetech.onduty.Adapters.RestaurantsAdapter
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class RestrauntsActivity : AppCompatActivity() {
@@ -16,9 +17,10 @@ class RestrauntsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restraunts)
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         setupFonts()
         populateList()
+        setupBack(backIcon)
     }
 
     private fun populateList() {

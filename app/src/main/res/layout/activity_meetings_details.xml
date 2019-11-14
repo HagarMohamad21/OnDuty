@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.MeetingsDetailsActivity">
-
-    <TextView
+                 <TextView
         android:id="@+id/briefingTxt2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -23,15 +22,14 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"
         android:layout_marginTop="@dimen/innerSpacing"
-        android:layout_marginEnd="5dp"
         android:background="@drawable/btn_background_accent_green"
         android:gravity="center"
         android:text="Acknowledge"
         android:textColor="@color/white"
         android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toStartOf="@+id/textView105"
+        app:layout_constraintEnd_toStartOf="@+id/textView66"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/briefingTxt2"
+        app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/briefingTxt2" />
 
     <TextView
@@ -44,9 +42,9 @@
         android:text="Acknowledge&amp;Attend"
         android:textColor="@color/white"
         android:textSize="@dimen/textSize"
-        app:layout_constraintEnd_toEndOf="@+id/briefingTxt2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView104"
+        app:layout_constraintStart_toEndOf="@+id/textView66"
         app:layout_constraintTop_toBottomOf="@+id/briefingTxt2" />
 
     <include layout="@layout/snippet_toolbar" />
@@ -214,4 +212,17 @@
         app:layout_constraintStart_toEndOf="@+id/textView97"
         app:layout_constraintTop_toBottomOf="@+id/textView102" />
 
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:tag="icon"
+        android:text="@string/infoIcon"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView105"
+        app:layout_constraintEnd_toStartOf="@+id/textView105"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView104"
+        app:layout_constraintTop_toTopOf="@+id/textView105" />
 </android.support.constraint.ConstraintLayout>

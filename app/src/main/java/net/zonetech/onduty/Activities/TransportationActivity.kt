@@ -5,6 +5,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class TransportationActivity : AppCompatActivity() {
@@ -13,8 +14,9 @@ class TransportationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_transportation)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
+        setupBack(backIcon)
     }
 
     private fun populateList() {

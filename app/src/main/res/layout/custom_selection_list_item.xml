@@ -27,12 +27,12 @@
 
     <TextView
         android:id="@+id/infoIcon"
-        android:layout_width="30dp"
-        android:layout_height="0dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:text="@string/infoIcon"
         android:gravity="end|center_vertical"
         android:tag="icon"
-        android:visibility="gone"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

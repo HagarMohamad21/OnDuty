@@ -5,9 +5,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
-import net.zonetech.onduty.Utils.open
-import net.zonetech.onduty.Utils.setupFonts
-import net.zonetech.onduty.Utils.toggleVisibilty
+import net.zonetech.onduty.Utils.*
 
 class LoginActivity : AppCompatActivity() {
 
@@ -17,6 +15,8 @@ class LoginActivity : AppCompatActivity() {
         initViews()
         setupFonts()
         setListeners()
+        setupBack(backIcon)
+        setupMenu(menuIcon)
     }
 
     private fun initViews() {

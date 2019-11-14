@@ -10,6 +10,7 @@ import net.zonetech.onduty.FixedLists.initPersonalList
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.ItemDecoration
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class PersonalActivity : AppCompatActivity() {
@@ -18,7 +19,8 @@ class PersonalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal)
        initViews()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
+        setupBack(backIcon)
     }
 
 

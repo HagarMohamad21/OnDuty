@@ -6,6 +6,7 @@ import kotlinx.android.synthetic.main.layout_request_leave.*
 import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.R
 import net.zonetech.onduty.Utils.setupBack
+import net.zonetech.onduty.Utils.setupMenu
 import net.zonetech.onduty.Utils.setupFonts
 
 class RequestLeaveActvity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class RequestLeaveActvity : AppCompatActivity() {
         setContentView(R.layout.activity_request_leave_actvity)
         setupFonts()
         initViews()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
+        setupBack(backIcon)
     }
 
     private fun initViews() {

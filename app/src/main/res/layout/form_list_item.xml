@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:text="@string/downloadIcon"
         android:textSize="@dimen/topBarIconSize"
-        android:textColor="@color/blueAccent"
+        android:textColor="@color/colorAccent"
         android:tag="icon"
         app:layout_constraintBottom_toBottomOf="@+id/regularTxtView"
         app:layout_constraintEnd_toEndOf="@+id/regularTxtView"

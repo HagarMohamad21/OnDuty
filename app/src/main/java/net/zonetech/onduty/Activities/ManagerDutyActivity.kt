@@ -8,10 +8,7 @@ import kotlinx.android.synthetic.main.snippet_toolbar.*
 import net.zonetech.onduty.Adapters.ReportsAdapter
 import net.zonetech.onduty.FixedLists.initManagerReports
 import net.zonetech.onduty.R
-import net.zonetech.onduty.Utils.Common
-import net.zonetech.onduty.Utils.ItemDecoration
-import net.zonetech.onduty.Utils.setupBack
-import net.zonetech.onduty.Utils.setupFonts
+import net.zonetech.onduty.Utils.*
 
 class ManagerDutyActivity : AppCompatActivity() {
 
@@ -19,8 +16,9 @@ class ManagerDutyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manager_duty)
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         populateList()
+        setupBack(backIcon)
     }
 
     private fun populateList() {

@@ -17,8 +17,9 @@ class RosterActivity : AppCompatActivity() {
         setContentView(net.zonetech.onduty.R.layout.activity_roster)
         initViews()
         setupFonts()
-        setupBack(menuIcon, false)
+        setupMenu(menuIcon)
         setListeners()
+        setupBack(backIcon)
     }
 
     private fun initViews() {
